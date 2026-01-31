@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defName>SuperPack_Invincibility</defName>
+        <label>invisibility</label>
+        <description>This person is protected by a shield. Destroy the structures to make them vulnerable</description>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="SuperPack.Hediffs.HediffCompProperties_Shielded">
+                <shieldBuildingDef>Ship_Reactor</shieldBuildingDef>
+                <shieldBuildingCount>2~5</shieldBuildingCount>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+        </comps>
+    </HediffDef>
+</Defs>

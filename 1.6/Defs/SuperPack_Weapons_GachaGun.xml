@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SoundDef>
+        <defName>RMP_GachaGun_Fire</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>RMP_GachaGun</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>0.8~1.2</pitchRange>
+                <volumeRange>30~50</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_Revolver">
+        <defName>RMP_GachaGun</defName>
+        <label>gacha gun</label>
+        <description>An ancient weapon, powered by silver. Fires random projectiles.</description>
+        <possessionCount>1</possessionCount>
+        <drawerType>RealtimeOnly</drawerType>
+        <tickerType>Rare</tickerType>
+        <graphicData>
+            <texPath>RMP_GachaGun</texPath>
+            <graphicClass>SuperPack.Graphic_Animated</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+        <soundInteract>RMP_GachaGun_Fire</soundInteract>
+        <statBases>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>1.4</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.40</AccuracyLong>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>SimpleGun</li>
+            <li>Revolver</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <costList>
+            <Steel>30</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>SuperPack.Verb_ShootRandom</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_Revolver</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>25.9</range>
+                <soundCast>Shot_Revolver</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps Inherit="False">
+            <li Class="SuperPack.Comps.CompProperties_EquippableReloadable">
+                <maxCharges>50</maxCharges>
+                <soundReload>Standard_Reload</soundReload>
+                <chargeNoun>coins</chargeNoun>
+                <ammoDef>Silver</ammoDef>
+                <ammoCountPerCharge>1</ammoCountPerCharge>
+                <baseReloadTicks>60</baseReloadTicks>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Biocodable"/>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponGun</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
