@@ -63,7 +63,7 @@ public class HediffComp_Kryptonite: HediffComp, IPreApplyDamage
         get
         {
             StringBuilder description = new StringBuilder();
-            description.AppendLine("SuperPack_KryptoniteDesc".Translate(Pawn.Named("PAWN")));
+            description.AppendLine("\n");
 
             if (!Props.projectileDefs.NullOrEmpty())
             {

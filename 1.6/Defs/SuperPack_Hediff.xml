@@ -19,7 +19,7 @@
         <hediffClass>HediffWithComps</hediffClass>
         <defName>SuperPack_KryptoniteInvincibility</defName>
         <label>Kryptonite invincibility</label>
-        <description>This person is only vulnerable to certain materials.</description>
+        <description>This person is almost completely invulnerable, only susceptible to attacks from certain materials or weapons.</description>
         <isBad>false</isBad>
         <comps>
             <li Class="SuperPack.Hediffs.HediffCompProperties_Kryptonite">
