@@ -6,7 +6,7 @@ using Verse;
 
 namespace SuperPack.Hediffs;
 
-public class HediffComp_Shielded: HediffComp
+public class HediffComp_Shielded: HediffComp, IPreApplyDamage
 {
     public Dictionary<Map, HashSet<Thing>> ShieldBuildings = new();
     public Dictionary<Map, bool> ShieldDestroyed = new();
@@ -15,6 +15,7 @@ public class HediffComp_Shielded: HediffComp
 
     public Map Map => parent.pawn.Map;
 
+    private Mote moteAbsorbed;
 
     public bool Shielded => !ShieldDestroyed[Map];
 
@@ -23,6 +24,7 @@ public class HediffComp_Shielded: HediffComp
 
     public override void CompPostTick(ref float severityAdjustment)
     {
+        moteAbsorbed?.Maintain();
         if (!ShieldBuildings.ContainsKey(Map) && (!ShieldDestroyed.ContainsKey(Map) || !ShieldDestroyed[Map]))
         {
             GenerateShield();
@@ -39,7 +41,7 @@ public class HediffComp_Shielded: HediffComp
 
     public override void CompPostMake()
     {
-        Pawn_Patch.shieldedPawns.Add(parent.pawn);
+        RegisterSelf();
     }
 
     public bool CanPlaceAt(IntVec3 cell)
@@ -116,5 +118,18 @@ public class HediffComp_Shielded: HediffComp
         {
             return Shielded ? "SuperPack_Shielded".Translate(Props.shieldBuildingDef.LabelCap, ShieldBuildingsCount - ShieldDestroyedCount, ShieldBuildingsCount) : "SuperPack_UnShielded".Translate(Props.shieldBuildingDef.LabelCap);
         }
+    }
+
+    public void PreApplyDamage(ref DamageInfo dinfo, ref bool absorbed)
+    {
+        if (!Shielded) return;
+        absorbed = true;
+
+        if (moteAbsorbed == null || moteAbsorbed.Destroyed) moteAbsorbed = Pawn_Patch.MakeAbsorbedOverlay(Pawn);
+    }
+
+    public void RegisterSelf()
+    {
+        Pawn_Patch.preApplyDamageHediffs.Add(this);
     }
 }

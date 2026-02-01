@@ -3,7 +3,7 @@
     <HediffDef>
         <hediffClass>HediffWithComps</hediffClass>
         <defName>SuperPack_Invincibility</defName>
-        <label>invisibility</label>
+        <label>invincibility</label>
         <description>This person is protected by a shield. Destroy the structures to make them vulnerable</description>
         <isBad>false</isBad>
         <comps>
@@ -14,4 +14,41 @@
             <li Class="HediffCompProperties_DisappearsOnDeath" />
         </comps>
     </HediffDef>
+
+    <HediffDef>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defName>SuperPack_KryptoniteInvincibility</defName>
+        <label>Kryptonite invincibility</label>
+        <description>This person is only vulnerable to certain materials.</description>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="SuperPack.Hediffs.HediffCompProperties_Kryptonite">
+                <projectileDefs>
+                    <li>Proj_Foam</li>
+                </projectileDefs>
+                <stuffDefs>
+                    <li>Uranium</li>
+                </stuffDefs>
+                <weaponDefs>
+                    <li>Turret_Sniper</li>
+                </weaponDefs>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+        </comps>
+    </HediffDef>
+
+
+    <ThingDef ParentName="MoteBase">
+        <defName>SuperPack_Mote_Absorbed</defName>
+        <thingClass>MoteDualAttached</thingClass>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+        <mote>
+            <solidTime>0.5</solidTime>
+            <fadeOutTime>0.5</fadeOutTime>
+            <needsMaintenance>true</needsMaintenance>
+        </mote>
+        <graphicData>
+            <texPath>SP_AbsorbedMote</texPath>
+        </graphicData>
+    </ThingDef>
 </Defs>

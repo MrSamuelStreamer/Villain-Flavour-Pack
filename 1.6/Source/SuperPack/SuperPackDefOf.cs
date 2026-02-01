@@ -11,6 +11,7 @@ public static class SuperPackDefOf
     // public static GeneDef YourPrefix_YourGeneDefName;
 
     public static SoundDef RMP_GachaGun_Fire;
+    public static ThingDef SuperPack_Mote_Absorbed;
 
     static SuperPackDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(SuperPackDefOf));
 }

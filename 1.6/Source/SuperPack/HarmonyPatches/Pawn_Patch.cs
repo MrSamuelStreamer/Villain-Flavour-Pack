@@ -9,18 +9,27 @@ namespace SuperPack.HarmonyPatches;
 [HarmonyPatch(typeof(Pawn))]
 public static class Pawn_Patch
 {
-    public static HashSet<Pawn> shieldedPawns = new();
+    public static HashSet<IPreApplyDamage> preApplyDamageHediffs = new();
 
     [HarmonyPatch(nameof(Pawn.PreApplyDamage))]
     [HarmonyPostfix]
-    public static void PreApplyDamage_Patch(Pawn __instance, ref bool absorbed)
+    public static void PreApplyDamage_Patch(Pawn __instance, ref DamageInfo dinfo, ref bool absorbed)
     {
-        if(!shieldedPawns.Contains(__instance)) return;
+        bool any = preApplyDamageHediffs.Any(x => x.Pawn == __instance);
 
-        foreach (HediffComp_Shielded shielded in __instance.health.hediffSet.hediffs.OfType<HediffWithComps>().SelectMany(h=>h.comps.OfType<HediffComp_Shielded>()))
+        if(!any) return;
+
+        foreach (IPreApplyDamage hediff in preApplyDamageHediffs.Where(x => x.Pawn == __instance))
         {
-            if(shielded.Shielded) absorbed = true;
+            hediff.PreApplyDamage(ref dinfo, ref absorbed);
         }
+    }
 
+    public static Mote MakeAbsorbedOverlay(Thing stunnedThing)
+    {
+        Mote newThing = (Mote) ThingMaker.MakeThing(SuperPackDefOf.SuperPack_Mote_Absorbed);
+        newThing.Attach((TargetInfo) stunnedThing);
+        GenSpawn.Spawn(newThing, stunnedThing.Position, stunnedThing.Map);
+        return newThing;
     }
 }
