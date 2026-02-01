@@ -37,6 +37,21 @@
         </comps>
     </HediffDef>
 
+    <HediffDef>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defName>SuperPack_BluntInvincibility</defName>
+        <label>Blunt invincibility</label>
+        <description>This person is completely invulnerable to blunt damage.</description>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="SuperPack.Hediffs.HediffCompProperties_TypeWeakness">
+                <weaknessTypes>
+                    <li>Blunt</li>
+                </weaknessTypes>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+        </comps>
+    </HediffDef>
 
     <ThingDef ParentName="MoteBase">
         <defName>SuperPack_Mote_Absorbed</defName>
