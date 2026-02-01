@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>MMVV_NewVillainVault</defName>
+    <label>Villanous Vault</label>
+    <description>You, a random person, on a random world, in a random place, have been imbued with random abilities. All that you have been left is an assortment of random boxes containing random things. But you never asked for this - they kidnapped you, told you it was a safe proceedure, and now you've been left with horrible mutations that you can barely control. They must pay. They'll all PAY!</description>
+    <scenario>
+      <summary>A long forgotten experiment left to die in an evacuated vault. The villainous experience.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>MMVV_VaultVillainsFactionPlayer</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>1</pawnCount>
+          <pawnChoiceCount>1</pawnChoiceCount>
+        </li>
+        <li Class="VanillaQuestsExpandedAncients.ScenPart_SealedVault">
+          <def>VQEA_SealedVaultPart</def>
+          <structureSetDef>VQEA_SealedVaultUndergroundStructure</structureSetDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>You, a random person, on a random world, in a random place, have been imbued with random abilities. All that you have been left is an assortment of random boxes containing random things. But you never asked for this - they kidnapped you, told you it was a safe proceedure, and now you've been left with horrible mutations that you can barely control. They must pay. They'll all PAY!</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenPartDef>
+    <defName>VQEA_SealedVaultPart</defName>
+    <label>start with sealed vault</label>
+    <scenPartClass>VanillaQuestsExpandedAncients.ScenPart_SealedVault</scenPartClass>
+    <category>Misc</category>
+  </ScenPartDef>
+
+  <FactionDef ParentName="VillainFactionBase">
+    <defName>MMVV_VaultVillainsFactionPlayer</defName>
+    <label>super-villain gang</label>
+    <description>A loose confederation of villains who've agreed to mostly fight outsiders instead of fighting each other.\n\nVillains care little about human life, and will often try to kill everyone they come across in their quest for world domination.\n\nWhile they will never truly match the cruelty of The Super Villain, their willingness to dispose of those they view as lesser beings makes them a threat regardless.\n\nVillains have their own type of honor called Infamy. Infamy is their measure of how dedicated you are to their cause. The more dedicated you are, the more willing they are to work with you. Unlike the Empire, they are willing to let people use the boons granted by permits more often, but becoming their enemy through overt action or a lack of support will result in a lack of support.\n\nThe ranking system they use is the same as the threat levels assigned to them by The Hero Association. Tier 1 villains are the lowest, usually common soldiers, while Tier 9 villains are often believed to be planetary level threats.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>VQE_Patient</basicMemberKind>
+    <pawnSingular>villain</pawnSingular>
+    <pawnsPlural>villains</pawnsPlural>
+    <techLevel>animal</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures>
+      <li>Astropolitan</li>
+    </allowedCultures>
+    <categoryTag>SuperVillainGang</categoryTag>
+    <configurationListOrderPriority>999</configurationListOrderPriority>
+    <fixedName>The League of Villains</fixedName>
+    <settlementTexturePath>VillainFactionIcon</settlementTexturePath>
+    <royalFavorLabel>infamy</royalFavorLabel>
+    <royalFavorIconPath>VillainFactionIcon</royalFavorIconPath>
+    <colorSpectrum Inherit="False">
+        <li>(0.93, 0.15, 0.12)</li>
+    </colorSpectrum>
+    <royalTitleTags>
+        <li>SHG_VillainTitle</li>
+    </royalTitleTags>
+    <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations>
+        <li>Child</li>
+        <li>Spouse</li>
+        <li>Sibling</li>
+        <li>HalfSibling</li>
+        <li>Parent</li>
+        <li>Cousin</li>
+        <li>UncleOrAunt</li>
+        <li>Grandchild</li>
+        <li>GreatGrandchild</li>
+        <li>NephewOrNiece</li>
+    </royalTitleInheritanceRelations>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>VQE_AncientPatient</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+  </FactionDef>
+</Defs>
