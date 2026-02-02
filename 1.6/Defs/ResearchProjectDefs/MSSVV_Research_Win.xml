@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>MSSVV_Wincon</defName>
+		<label>Manifest Thought</label>
+		<description>Your powers have become so powerful, and so very villainous, that you can you feel your thoughts shaping reality itself. With just a bit more thinking you might be able to bring the whole world under your control, but strain too much and you might erase yourself from existence.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX> <!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+	</ResearchProjectDef>
+  
+	<!-- Failure -->
+
+	<ResearchProjectDef>
+		<defName>MSSVV_Loss1</defName>
+		<label>Manifest Doubt</label>
+		<description>Manifest manipulation skills so powerful you begin to manipulate yourself into believing you're not powerful enough. Combined with Manifest Trauma, you might subconciously erase yourself from existence entirely.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX>	<!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+		<prerequisites>
+			<li>MSSVV_Wincon</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+		<ResearchProjectDef>
+		<defName>MSSVV_Loss2</defName>
+		<label>Manifest Trauma</label>
+		<description>Lose yourself in the trauma from the experiments performed on you and desperately make it end by any means necessary! Combined with Manifest Doubt, you might subconciously erase yourself from existence entirely.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX>	<!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+		<prerequisites>
+			<li>MSSVV_Wincon</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- Victory -->
+
+	<ResearchProjectDef>
+		<defName>MSSVV_Win1</defName>
+		<label>Manifest Control</label>
+		<description>Focus your will and exert it across the whole world! Combined with Manifest Doctrine, you will be able to project your beliefs across the whole planet and dominate the world!</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX>	<!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+		<prerequisites>
+			<li>MSSVV_Wincon</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MSSVV_Win2</defName>
+		<label>Manifest Doctrine</label>
+		<description>Master the art of manipulating the beliefs of others to align with your own! Combined with Manifest Control, you will be able to project your beliefs across the whole planet and dominate the world!</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX>	<!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+		<prerequisites>
+			<li>MSSVV_Wincon</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- Neutral -->
+
+	<ResearchProjectDef>
+		<defName>MSSVV_Neutral1</defName>
+		<label>Wandering Thoughts</label>
+		<description>Wandering thoughts and ideas that don't quite fit anywhere else. They're not particularly useful, but they're not harmful either. You make no progress towards either victory or failure.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX>	<!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+		<prerequisites>
+			<li>MSSVV_Wincon</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MSSVV_Neutral2</defName>
+		<label>Subconscious Distractions</label>
+		<description>Subconcious distractions stand in the way of your grand plan. You make no progress towards either victory or failure.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX>	<!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+		<prerequisites>
+			<li>MSSVV_Wincon</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MSSVV_Neutral3</defName>
+		<label>Environmental Annoyances</label>
+		<description>Environmental annoyances pull you out of your focus. You make no progress towards either victory or failure.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX>	<!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+		<prerequisites>
+			<li>MSSVV_Wincon</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MSSVV_Neutral4</defName>
+		<label>Performance Anxiety</label>
+		<description>Performance anxiety prevents you from really getting into the world domination mood. You make no progress towards either victory or failure.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>12.00</researchViewX>	<!-- Fix later if necessary -->
+    	<researchViewY>1.20</researchViewY>
+		<prerequisites>
+			<li>MSSVV_Wincon</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>

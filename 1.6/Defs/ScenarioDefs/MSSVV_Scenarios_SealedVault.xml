@@ -8,7 +8,8 @@
       <summary>A long forgotten experiment left to die in an evacuated vault. The villainous experience.</summary>
       <playerFaction>
         <def>PlayerFaction</def>
-        <factionDef>MMVV_VaultVillainsFactionPlayer</factionDef>
+        <!-- <factionDef>MMVV_VaultVillainsFactionPlayer</factionDef> -->
+        <factionDef>VQE_NewVaultPlayerFaction</factionDef>
       </playerFaction>
       <parts>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -30,6 +31,31 @@
           <thingDef>MedicineIndustrial</thingDef>
           <count>20</count>
         </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <alwaysHostile>True</alwaysHostile>
+          <affectHiddenFactions>True</affectHiddenFactions>
+          <affectStartingGoodwill>True</affectStartingGoodwill>
+          <startingGoodwillRange>0~0</startingGoodwillRange>
+          <affectNaturalGoodwill>True</affectNaturalGoodwill>
+          <naturalGoodwillRange>0~0</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>SuperVillainGang</factionDef>
+          <affectStartingGoodwill>True</affectStartingGoodwill>
+          <startingGoodwillRange>-50</startingGoodwillRange>
+          <affectNaturalGoodwill>True</affectNaturalGoodwill>
+          <naturalGoodwillRange>-50~50</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>MinorSuperVillainGang</factionDef>
+          <affectStartingGoodwill>True</affectStartingGoodwill>
+          <startingGoodwillRange>-25</startingGoodwillRange>
+          <affectNaturalGoodwill>True</affectNaturalGoodwill>
+          <naturalGoodwillRange>-15~25</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
           <text>You, a random person, on a random world, in a random place, have been imbued with random abilities. All that you have been left is an assortment of random boxes containing random things. But you never asked for this - they kidnapped you, told you it was a safe proceedure, and now you've been left with horrible mutations that you can barely control. They must pay. They'll all PAY!</text>
@@ -46,7 +72,7 @@
     <category>Misc</category>
   </ScenPartDef>
 
-  <FactionDef ParentName="VillainFactionBase">
+  <!-- <FactionDef ParentName="VillainFactionBase">
     <defName>MMVV_VaultVillainsFactionPlayer</defName>
     <label>super-villain gang</label>
     <description>A loose confederation of villains who've agreed to mostly fight outsiders instead of fighting each other.\n\nVillains care little about human life, and will often try to kill everyone they come across in their quest for world domination.\n\nWhile they will never truly match the cruelty of The Super Villain, their willingness to dispose of those they view as lesser beings makes them a threat regardless.\n\nVillains have their own type of honor called Infamy. Infamy is their measure of how dedicated you are to their cause. The more dedicated you are, the more willing they are to work with you. Unlike the Empire, they are willing to let people use the boons granted by permits more often, but becoming their enemy through overt action or a lack of support will result in a lack of support.\n\nThe ranking system they use is the same as the threat levels assigned to them by The Hero Association. Tier 1 villains are the lowest, usually common soldiers, while Tier 9 villains are often believed to be planetary level threats.</description>
@@ -54,7 +80,7 @@
     <basicMemberKind>VQE_Patient</basicMemberKind>
     <pawnSingular>villain</pawnSingular>
     <pawnsPlural>villains</pawnsPlural>
-    <techLevel>animal</techLevel>
+    <techLevel>Animal</techLevel>
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <allowedCultures>
@@ -105,5 +131,5 @@
         </categories>
       </li>
     </backstoryFilters>
-  </FactionDef>
+  </FactionDef> -->
 </Defs>
