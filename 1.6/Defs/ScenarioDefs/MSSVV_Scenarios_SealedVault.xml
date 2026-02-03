@@ -98,6 +98,15 @@
           <thingDef>ARandom_FateManipulator</thingDef>
           <allowRoofed>True</allowRoofed>
         </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>RH2_BrainwashChair</thingDef>
+          <stuff>WoodLog</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>TubeTelevision</thingDef>
+        </li>
       </parts>
     </scenario>
   </ScenarioDef>
