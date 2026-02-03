@@ -61,6 +61,43 @@
           <text>You, a random person, on a random world, in a random place, have been imbued with random abilities. All that you have been left is an assortment of random boxes containing random things. But you never asked for this - they kidnapped you, told you it was a safe proceedure, and now you've been left with horrible mutations that you can barely control. They must pay. They'll all PAY!</text>
           <closeSound>GameStartSting</closeSound>
         </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ARandom_LootBox</thingDef>
+          <count>8</count>
+          <allowRoofed>True</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ARandom_LootBox_High</thingDef>
+          <count>3</count>
+          <allowRoofed>True</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ARandom_LootBox_SuperHigh</thingDef>
+          <allowRoofed>True</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ARandom_FateManipulator_Chaotic</thingDef>
+          <allowRoofed>True</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ARandom_FateManipulator_Benign</thingDef>
+          <allowRoofed>True</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ARandom_FateManipulator_Dark</thingDef>
+          <allowRoofed>True</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ARandom_FateManipulator</thingDef>
+          <allowRoofed>True</allowRoofed>
+        </li>
       </parts>
     </scenario>
   </ScenarioDef>
