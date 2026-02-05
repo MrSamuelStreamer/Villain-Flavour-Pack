@@ -18,7 +18,7 @@
     <graphicData>
       <texPath>MSS_RollDice</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.5,1)</drawSize>
+      <drawSize>(0.5375,0.8)</drawSize>
     </graphicData>
     <statBases>
       <Flammability>0</Flammability>

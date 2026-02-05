@@ -15,7 +15,7 @@ namespace MSS_Roll1d6
             yield return new Command_Action
             {
                 defaultLabel = "Roll 1d6",
-                defaultDesc = "Roll a standard six-sided dice",
+                defaultDesc = "Roll a standard six-sided dice.",
                 icon = ContentFinder<Texture2D>.Get("UI/MSS_1d6", true),
                 action = MSS_Roll1d6
             };
@@ -23,7 +23,7 @@ namespace MSS_Roll1d6
             yield return new Command_Action
             {
                 defaultLabel = "Roll 1d2",
-                defaultDesc = "Roll a two-sided dice (where did we get this idea from?)",
+                defaultDesc = "Rolls a two-sided dice (where did we get this idea from?).",
                 icon = ContentFinder<Texture2D>.Get("UI/MSS_1d2", true),
                 action = MSS_Roll1d2
             };
@@ -34,7 +34,7 @@ namespace MSS_Roll1d6
             int roll = Rand.RangeInclusive(1, 6);
 
             Find.LetterStack.ReceiveLetter(
-                "Rolling the dice",
+                "Rolling the 1d6 dice",
                 $"The dice shows: {roll}",
                 LetterDefOf.PositiveEvent,
                 new TargetInfo(Position, Map)
@@ -46,7 +46,7 @@ namespace MSS_Roll1d6
             int roll = Rand.RangeInclusive(1, 2);
 
             Find.LetterStack.ReceiveLetter(
-                "Rolling the dice",
+                "Rolling the 1d2 dice",
                 $"The dice shows: {roll}",
                 LetterDefOf.PositiveEvent,
                 new TargetInfo(Position, Map)
