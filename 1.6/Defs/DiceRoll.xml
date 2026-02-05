@@ -10,7 +10,6 @@
     <thingCategories>
       <li>BuildingsMisc</li>
     </thingCategories>
-    <designationCategory>Misc</designationCategory>
     <size>(1,1)</size>
     <passability>PassThroughOnly</passability>
     <altitudeLayer>Building</altitudeLayer>
