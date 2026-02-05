@@ -23,7 +23,7 @@ namespace MSS_Roll1d6
             yield return new Command_Action
             {
                 defaultLabel = "Roll 1d2",
-                defaultDesc = "Rolls a two-sided dice (where did we get this idea from?).",
+                defaultDesc = "Rolls a two-sided dice (where did we get this idea from?)",
                 icon = ContentFinder<Texture2D>.Get("UI/MSS_1d2", true),
                 action = MSS_Roll1d2
             };
