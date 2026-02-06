@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <GeneDef>
+        <defName>SuperPack_Gene_Invincibility</defName>
+        <label>invincibility</label>
+        <description>This person is protected by a shield. Destroy the structures to make them vulnerable</description>
+        <iconPath>UI/Icons/Genes/Gene_Invincibility</iconPath>
+        <biostatArc>1</biostatArc>
+        <displayCategory>Archite</displayCategory>
+        <modExtensions>
+            <li Class="BigAndSmall.PawnExtension">
+                <applyBodyHediff>
+                    <li>
+                        <hediff>SuperPack_Invincibility</hediff>
+                    </li>
+                </applyBodyHediff>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    <GeneDef>
+        <defName>SuperPack_Gene_KryptoniteInvincibility</defName>
+        <label>Kryptonite invincibility</label>
+        <description>This person is almost completely invulnerable, only susceptible to attacks from certain materials or weapons.</description>
+        <iconPath>UI/Icons/Genes/Gene_Kryptonite</iconPath>
+        <biostatArc>1</biostatArc>
+        <displayCategory>Archite</displayCategory>
+        <modExtensions>
+            <li Class="BigAndSmall.PawnExtension">
+                <applyBodyHediff>
+                    <li>
+                        <hediff>SuperPack_KryptoniteInvincibility</hediff>
+                    </li>
+                </applyBodyHediff>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    <GeneDef>
+        <defName>SuperPack_Gene_BluntInvincibility</defName>
+        <label>Blunt invincibility</label>
+        <description>This person is completely invulnerable to blunt damage.</description>
+        <iconPath>UI/Icons/Genes/Gene_blunt</iconPath>
+        <biostatArc>1</biostatArc>
+        <displayCategory>Archite</displayCategory>
+        <modExtensions>
+            <li Class="BigAndSmall.PawnExtension">
+                <applyBodyHediff>
+                    <li>
+                        <hediff>SuperPack_BluntInvincibility</hediff>
+                    </li>
+                </applyBodyHediff>
+            </li>
+        </modExtensions>
+    </GeneDef>
+</Defs>
