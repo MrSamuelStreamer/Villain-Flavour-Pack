@@ -55,6 +55,20 @@
 
     <HediffDef>
         <hediffClass>HediffWithComps</hediffClass>
+        <defName>SuperPack_InstantDeath</defName>
+        <label>instant death</label>
+        <description>When enabled, the first thing that damages this person will die. Recharges after half a day. Toggle with the ability button when selected.</description>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="SuperPack.Hediffs.HediffCompProperties_InstantDeath">
+                <rechargeTicks>30000</rechargeTicks>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <hediffClass>HediffWithComps</hediffClass>
         <defName>SuperPack_PersonaWeaponAura</defName>
         <label>weapon whisperer</label>
         <description>Any weapon this person picks up is temporarily bonded to them like a persona weapon, gaining the attack speed bonus. When dropped, the weapon reverts to normal.</description>
