@@ -85,4 +85,17 @@
             </li>
         </modExtensions>
     </GeneDef>
+    <GeneDef>
+        <defName>SuperPack_Gene_Walking</defName>
+        <label>walking</label>
+        <description>This person walks 25% faster, loses rest (fatigue) 25% slower, has 200% more carrying capacity, and does not lose rest while traveling in a caravan.</description>
+        <iconPath>UI/Icons/Genes/Gene_Walking</iconPath>
+        <biostatArc>1</biostatArc>
+        <displayCategory>Archite</displayCategory>
+        <statFactors>
+            <MoveSpeed>1.25</MoveSpeed>
+            <RestFallRateFactor>0.75</RestFallRateFactor>
+            <CarryingCapacity>3</CarryingCapacity>
+        </statFactors>
+    </GeneDef>
 </Defs>
