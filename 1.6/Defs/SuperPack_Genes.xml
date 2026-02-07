@@ -51,4 +51,21 @@
             </li>
         </modExtensions>
     </GeneDef>
+    <GeneDef>
+        <defName>SuperPack_Gene_PersonaWeaponAura</defName>
+        <label>weapon whisperer</label>
+        <description>Any weapon this person picks up becomes temporarily bonded like a persona weapon, gaining the attack speed bonus. When they drop it, the weapon reverts to normal.</description>
+        <iconPath>UI/Icons/Genes/Gene_weaponWhisper</iconPath>
+        <biostatArc>1</biostatArc>
+        <displayCategory>Archite</displayCategory>
+        <modExtensions>
+            <li Class="BigAndSmall.PawnExtension">
+                <applyBodyHediff>
+                    <li>
+                        <hediff>SuperPack_PersonaWeaponAura</hediff>
+                    </li>
+                </applyBodyHediff>
+            </li>
+        </modExtensions>
+    </GeneDef>
 </Defs>
