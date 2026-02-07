@@ -53,6 +53,25 @@
         </comps>
     </HediffDef>
 
+    <HediffDef>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defName>SuperPack_PersonaWeaponAura</defName>
+        <label>weapon whisperer</label>
+        <description>Any weapon this person picks up is temporarily bonded to them like a persona weapon, gaining the attack speed bonus. When dropped, the weapon reverts to normal.</description>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statFactors>
+                    <MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="SuperPack.Hediffs.HediffCompProperties_PersonaWeaponAura" />
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+        </comps>
+    </HediffDef>
+
     <ThingDef ParentName="MoteBase">
         <defName>SuperPack_Mote_Absorbed</defName>
         <thingClass>MoteDualAttached</thingClass>
