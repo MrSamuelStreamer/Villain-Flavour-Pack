@@ -13,6 +13,10 @@
     <SuperPack_KryptoniteDescStuff>They are weak to weapons made from:\n{0}</SuperPack_KryptoniteDescStuff>
     <SuperPack_KryptoniteDescWeapons>They are weak to these weapons:\n{0}</SuperPack_KryptoniteDescWeapons>
 
+    <SuperPack_InstantDeath_Gizmo>Instant death</SuperPack_InstantDeath_Gizmo>
+    <SuperPack_InstantDeath_GizmoDesc>When ON, the first thing that damages this pawn will die. Then it must recharge before it can trigger again.</SuperPack_InstantDeath_GizmoDesc>
+    <SuperPack_InstantDeath_Ready>Ready to trigger.</SuperPack_InstantDeath_Ready>
+    <SuperPack_InstantDeath_RechargeIn>Recharges in: {0}</SuperPack_InstantDeath_RechargeIn>
 
     <Superpack_BrainwashPatch_CatatonicMessage_Label>Brainwash complete: {PAWN_nameDef}</Superpack_BrainwashPatch_CatatonicMessage_Label>
     <Superpack_BrainwashPatch_CatatonicMessage_Text>{PAWN_nameDef} has been brainwashed into a catatonic state, and their entire personality has been randomly rerolled.</Superpack_BrainwashPatch_CatatonicMessage_Text>

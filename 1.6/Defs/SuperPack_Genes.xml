@@ -68,4 +68,21 @@
             </li>
         </modExtensions>
     </GeneDef>
+    <GeneDef>
+        <defName>SuperPack_Gene_InstantDeath</defName>
+        <label>instant death</label>
+        <description>When the ability is enabled, the first thing that damages this person will die. Recharges after half a day. Toggle the ability when the pawn is selected.</description>
+        <iconPath>UI/Icons/Genes/Gene_instant_death</iconPath>
+        <biostatArc>3</biostatArc>
+        <displayCategory>Archite</displayCategory>
+        <modExtensions>
+            <li Class="BigAndSmall.PawnExtension">
+                <applyBodyHediff>
+                    <li>
+                        <hediff>SuperPack_InstantDeath</hediff>
+                    </li>
+                </applyBodyHediff>
+            </li>
+        </modExtensions>
+    </GeneDef>
 </Defs>
