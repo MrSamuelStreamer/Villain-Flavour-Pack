@@ -86,6 +86,20 @@
         </modExtensions>
     </GeneDef>
     <GeneDef>
+        <defName>SuperPack_Gene_Gacha</defName>
+        <label>gacha</label>
+        <description>Use the ability every 3 hours to spawn a random item at a chosen spot within range.</description>
+        <iconPath>UI/MSS_1d6</iconPath>
+        <biostatArc>1</biostatArc>
+        <displayCategory>Archite</displayCategory>
+        <abilities>
+            <li>SuperPack_Gacha</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>SuperPack_Gacha</AbilityDef>
+        </descriptionHyperlinks>
+    </GeneDef>
+    <GeneDef>
         <defName>SuperPack_Gene_Walking</defName>
         <label>walking</label>
         <description>This person walks 25% faster, loses rest (fatigue) 25% slower, has 200% more carrying capacity, and does not lose rest while traveling in a caravan.</description>

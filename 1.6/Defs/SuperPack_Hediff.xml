@@ -14,7 +14,6 @@
             <li Class="HediffCompProperties_DisappearsOnDeath" />
         </comps>
     </HediffDef>
-
     <HediffDef>
         <hediffClass>HediffWithComps</hediffClass>
         <defName>SuperPack_KryptoniteInvincibility</defName>
@@ -36,7 +35,6 @@
             <li Class="HediffCompProperties_DisappearsOnDeath" />
         </comps>
     </HediffDef>
-
     <HediffDef>
         <hediffClass>HediffWithComps</hediffClass>
         <defName>SuperPack_BluntInvincibility</defName>
@@ -52,7 +50,6 @@
             <li Class="HediffCompProperties_DisappearsOnDeath" />
         </comps>
     </HediffDef>
-
     <HediffDef>
         <hediffClass>HediffWithComps</hediffClass>
         <defName>SuperPack_InstantDeath</defName>
@@ -66,7 +63,6 @@
             <li Class="HediffCompProperties_DisappearsOnDeath" />
         </comps>
     </HediffDef>
-
     <HediffDef>
         <hediffClass>HediffWithComps</hediffClass>
         <defName>SuperPack_PersonaWeaponAura</defName>
@@ -85,7 +81,6 @@
             <li Class="HediffCompProperties_DisappearsOnDeath" />
         </comps>
     </HediffDef>
-
     <ThingDef ParentName="MoteBase">
         <defName>SuperPack_Mote_Absorbed</defName>
         <thingClass>MoteDualAttached</thingClass>

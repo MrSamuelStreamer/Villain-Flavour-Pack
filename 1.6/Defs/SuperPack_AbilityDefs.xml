@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AbilityDef>
+        <defName>SuperPack_Gacha</defName>
+        <label>gacha</label>
+        <description>Select a spot within range to spawn a random item there. On cooldown for 3 hours after use.</description>
+        <iconPath>UI/MSS_1d6</iconPath>
+        <cooldownTicksRange>7500</cooldownTicksRange>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>3</range>
+            <warmupTime>0</warmupTime>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="SuperPack.CompProperties_AbilityGacha" />
+        </comps>
+    </AbilityDef>
+</Defs>

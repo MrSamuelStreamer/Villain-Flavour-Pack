@@ -18,6 +18,11 @@
     <SuperPack_InstantDeath_Ready>Ready to trigger.</SuperPack_InstantDeath_Ready>
     <SuperPack_InstantDeath_RechargeIn>Recharges in: {0}</SuperPack_InstantDeath_RechargeIn>
 
+    <SuperPack_Gacha_Gizmo>Gacha</SuperPack_Gacha_Gizmo>
+    <SuperPack_Gacha_GizmoDesc>Select a spot to spawn a random item there. On cooldown for 3 hours after use.</SuperPack_Gacha_GizmoDesc>
+    <SuperPack_Gacha_Ready>Ready to use.</SuperPack_Gacha_Ready>
+    <SuperPack_Gacha_RechargeIn>Ready in: {0}</SuperPack_Gacha_RechargeIn>
+
     <Superpack_BrainwashPatch_CatatonicMessage_Label>Brainwash complete: {PAWN_nameDef}</Superpack_BrainwashPatch_CatatonicMessage_Label>
     <Superpack_BrainwashPatch_CatatonicMessage_Text>{PAWN_nameDef} has been brainwashed into a catatonic state, and their entire personality has been randomly rerolled.</Superpack_BrainwashPatch_CatatonicMessage_Text>
 </LanguageData>
