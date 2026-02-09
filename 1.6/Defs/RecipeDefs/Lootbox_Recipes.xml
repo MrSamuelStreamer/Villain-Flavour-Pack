@@ -4,10 +4,10 @@
 
   <RecipeDef>
     <defName>MSS_Lootbox_Organ</defName>
-    <label>make a random organ.</label>
+    <label>make a box of assorted body parts and implants.</label>
     <description>Reverse-engineer ancient methods of creating an assortment of body parts and implants.</description>
 		<displayPriority>1</displayPriority>
-    <workAmount>300</workAmount>
+    <workAmount>300</workAmount> <!-- suggested to be around 60000, 300 just for test -->
     <effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<jobString>Making organ box.</jobString>
@@ -22,7 +22,7 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>50</count>
+				<count>50</count> <!-- suggested to be between 75-150, 50 was when i thought it was just 1 organ (it's 3) -->
 			</li>
       <li>
 				<filter>
@@ -30,7 +30,7 @@
 						<li>ComponentSpacer</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>5</count> <!-- suggested to be between 9-12, 5 was when i thought it was just 1 organ (it's 3) -->
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
