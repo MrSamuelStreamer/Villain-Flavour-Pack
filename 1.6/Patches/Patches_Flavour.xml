@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="LTS_ShieldImplant"]/description</xpath>
+    <value>
+      <description>An implanted projectile-repulsion device, designed to .
+
+// Note - lead engineer left the lab early, insisted that the item did not need a manual and was "self-evident".
+I'm inclined to agree, but there are so many damn shields out there and we need this to stand out, and not for the wrong reasons.
+It's due to ship soon and we can't leave it in this state. Will set a reminder to update the guide manual before the deadline.
+-C</description>
+    </value>
+  </Operation>
+</Patch>
