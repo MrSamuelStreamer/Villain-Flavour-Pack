@@ -3,7 +3,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>MSS_RollDice</defName>
     <label>dice roller</label>
-    <description>A simple dice. What does it mean? What are you going to do?</description>
+    <description>A simple dice cup, with an exquisite logo of a polar bear wearing sunglasses. Two types of dice are included.</description>
     <thingClass>MSS_Roll1d6.RollTheDice</thingClass>
     <useHitPoints>false</useHitPoints>
     <category>Building</category>

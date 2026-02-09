@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<Defs>
+
+  <RecipeDef>
+    <defName>MSS_Lootbox_Organ</defName>
+    <label>make a random organ.</label>
+    <description>Reverse-engineer ancient methods of creating an assortment of body parts and implants.</description>
+		<displayPriority>1</displayPriority>
+    <workAmount>300</workAmount>
+    <effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<jobString>Making organ box.</jobString>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>VQEA_AncientWorkshop</li>
+		</recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+      <li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VQEA_AncientOrganBox>1</VQEA_AncientOrganBox>
+		</products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+</Defs>
+-->
