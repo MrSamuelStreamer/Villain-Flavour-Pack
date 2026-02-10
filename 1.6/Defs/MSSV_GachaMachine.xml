@@ -131,8 +131,7 @@ A tiny warning underneath the slogans indicate that it takes some time to work a
 
     <!-- Parent gacha recipe -->
     <RecipeDef Abstract="True" Name="MSSV_Gacha_Gestator">
-      <description>Form a random assortment of body parts.</description>
-      <jobString>Playing Gacha machine to win a prize.</jobString>
+      <jobString>Using gacha machine.</jobString>
       <workAmount>1800</workAmount>
       <formingTicks>60000</formingTicks>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
