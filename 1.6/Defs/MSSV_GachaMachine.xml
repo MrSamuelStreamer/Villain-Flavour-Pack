@@ -4,7 +4,7 @@
     <ThingDef ParentName="BenchBase">
         <defName>MSSV_Gacha_Workbench</defName>
         <label>Gacha machine</label>
-        <description>An enigmatic, ancient machine that seems to autonomously synthesise advanced, complex objects, but inexplicably only requiring silver to start the process.
+        <description>An enigmatic machine of seemingly ancient design. It seems to autonomously synthesise advanced, complex objects, inexplicably only requiring silver to start the process.
 
 Slogans drawn on the side of the mysterious machine suggest that once initiated, the machine enters a self-directed fabrication cycle, rearranging matter according to random patterns. The results are unpredictable.
 
