@@ -430,5 +430,26 @@ There is a microscopic slogan accompanied underneath this option: "weekly subscr
         </li>
       </ingredients>
     </RecipeDef>
+
+    <!-- inert fate manipulator -->
+    <RecipeDef ParentName="MSSV_Gacha_Gestator">
+      <defName>MSSV_Gacha_ARandom_FateManipulator</defName>
+      <label>form inert fate manipulator</label>
+      <description>Form an inert fate manipulator</description>
+      <products>
+        <ARandom_FateManipulator>1</ARandom_FateManipulator>
+      </products>
+      <displayPriority>1</displayPriority>
+      <ingredients Inherit="False">
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Silver</li>
+            </thingDefs>
+          </filter>
+          <count>200</count>
+        </li>
+      </ingredients>
+    </RecipeDef>
   
 </Defs>
