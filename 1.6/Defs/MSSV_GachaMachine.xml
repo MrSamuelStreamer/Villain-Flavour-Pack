@@ -11,12 +11,19 @@ Slogans drawn on the side of the mysterious machine suggest that once initiated,
 A tiny warning underneath the slogans indicate that it takes some time to work and there is a biometric scanner to facilitate home delivery; however if no biometric data is mmatched, it'll simply drop to the dispensary box for anyone to retrieve.</description>
         <thingClass>Building_WorkTableAutonomous</thingClass>
         <graphicData>
-            <texPath>Buildings/gachamachine</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1,2)</drawSize>
-            <drawRotated>false</drawRotated>
-            <allowFlip>false</allowFlip>
+            <texPath>Buildings/Gachamachine/gachamachine</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(4,3)</drawSize>
+            <drawOffset>(0, 0, 0.7)</drawOffset>
         </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+        <uiIconOffset>(0,0)</uiIconOffset>
+        <castEdgeShadows>true</castEdgeShadows>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(1, 0, -1)</interactionCellOffset>
+        <rotatable>true</rotatable>
         <costList>
             <Plasteel>75</Plasteel>
             <Steel>50</Steel>
@@ -24,16 +31,10 @@ A tiny warning underneath the slogans indicate that it takes some time to work a
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
         <tradeability>Sellable</tradeability>
-        <castEdgeShadows>true</castEdgeShadows>
-        <rotatable>false</rotatable>
-        <drawerType>MapMeshAndRealTime</drawerType>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
         <fillPercent>0.5</fillPercent>
         <useHitPoints>True</useHitPoints>
         <tickerType>Normal</tickerType>
-        <hasInteractionCell>true</hasInteractionCell>
-        <interactionCellOffset>(0, 0, -1)</interactionCellOffset>
-        <statBases>
+                <statBases>
             <MaxHitPoints>400</MaxHitPoints>
             <WorkToBuild>60000</WorkToBuild>
             <Mass>30</Mass>
@@ -43,7 +44,7 @@ A tiny warning underneath the slogans indicate that it takes some time to work a
             <MSSV_Gacha_PowerStored>1</MSSV_Gacha_PowerStored>
             <WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
         </statBases>
-        <size>(1,2)</size>
+        <size>(2,1)</size>
         <designationCategory>Production</designationCategory>
         <uiOrder>2999</uiOrder>
         <passability>PassThroughOnly</passability>
@@ -74,9 +75,7 @@ A tiny warning underneath the slogans indicate that it takes some time to work a
             </li>
             <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Breakdownable" />
-        </comps>
-        <uiIconScale>1</uiIconScale>
-        <uiIconOffset>(0,0)</uiIconOffset>
+        </comps>        
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
