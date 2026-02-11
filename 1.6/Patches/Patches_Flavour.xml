@@ -11,4 +11,21 @@ It's due to ship soon and we can't leave it in this state. Will set a reminder t
 -C</description>
     </value>
   </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Heater"]/description</xpath>
+    <value>
+      <description>A device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.
+
+It is guaranteed to connect to an available power source and heat up the surrounding area, and is therefore confirmed to be more useful than Gun-May.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RB_Beehouse"]/description</xpath>
+    <value>
+		<description>A simple beehouse where bees will live and generate honeycombs for you.\n\nSome may procrastinate and neglect their beekeeping responsibilities for some time, while reports of starvation circulate widely. A curious and unusual predicament, given the fact that honey is readily available.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+    </value>
+  </Operation>
+  
 </Patch>
