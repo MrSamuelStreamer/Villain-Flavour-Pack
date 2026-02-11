@@ -166,15 +166,25 @@ A tiny warning underneath the slogans indicate that it takes some time to work a
     </RecipeDef> -->
 
 
-    <!-- VQEA Organ box -->
+    <!-- VQEA boxes  -->
     <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_Body</defName>
+      <defName>MSSV_Gacha_VQEAGene</defName>
+      <label>form gene box</label>
+      <description>Form a box filled with a random assortment of genes.</description>
+      <products>
+        <VQEA_AncientGenepackCrate>1</VQEA_AncientGenepackCrate>
+      </products>
+      <displayPriority>2</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MSSV_Gacha_Gestator">
+      <defName>MSSV_Gacha_VQEABody</defName>
       <label>form organ box</label>
-      <description>Form a boxed filled with a random assortment of body parts.</description>
+      <description>Form a box filled with a random assortment of body parts.</description>
       <products>
         <VQEA_AncientOrganBox>1</VQEA_AncientOrganBox>
       </products>
-      <displayPriority>1</displayPriority>
+      <displayPriority>2</displayPriority>
     </RecipeDef>
 
     <!-- Alpha Random stuff -->
