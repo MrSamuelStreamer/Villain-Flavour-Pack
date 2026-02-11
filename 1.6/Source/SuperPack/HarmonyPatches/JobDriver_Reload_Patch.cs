@@ -95,7 +95,9 @@ public static class JobDriver_Reload_Patch
                 CodeInstruction loadDisplayClass = null;
                 for (int j = i - 1; j >= 0; j--)
                 {
+#pragma warning disable CS0252, CS0253
                     if (code[j].opcode == OpCodes.Ldfld && (code[j].operand == displayClassInIterator || (code[j].operand is FieldInfo sfi && (sfi.Name == "<>8__1" || sfi.Name == "CS$<>8__locals1"))))
+#pragma warning restore CS0252, CS0253
                     {
                         if (j > 0 && code[j - 1].opcode == OpCodes.Ldarg_0)
                         {

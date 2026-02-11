@@ -10,6 +10,7 @@ public static class SuperPackDefOf
     public static GeneDef SuperPack_Gene_Walking;
 
     public static SoundDef RMP_GachaGun_Fire;
+    public static SoundDef RMP_GruntBirthday;
     public static ThingDef SuperPack_Mote_Absorbed;
 
     static SuperPackDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(SuperPackDefOf));

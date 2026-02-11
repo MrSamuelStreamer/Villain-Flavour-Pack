@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
+using RimWorld;
 using SuperPack.Hediffs;
 using Verse;
+using Verse.Sound;
 
 namespace SuperPack.HarmonyPatches;
 
@@ -31,5 +33,17 @@ public static class Pawn_Patch
         newThing.Attach((TargetInfo) stunnedThing);
         GenSpawn.Spawn(newThing, stunnedThing.Position, stunnedThing.Map);
         return newThing;
+    }
+
+    [HarmonyPatch(nameof(Pawn.PostApplyDamage))]
+    [HarmonyPostfix]
+    public static void PostApplyDamage_Patch(Pawn __instance, DamageInfo dinfo)
+    {
+        if(!SuperPack.settings.headshotSound) return;
+        if (dinfo.HitPart.def.defName.ToLower().Contains("head"))
+        {
+            SuperPackDefOf.RMP_GruntBirthday.PlayOneShot(new TargetInfo(__instance.Position, __instance.Map, false));
+            Messages.Message("Boom! Headshot!", new LookTargets(__instance), MessageTypeDefOf.NeutralEvent);
+        }
     }
 }

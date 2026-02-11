@@ -74,24 +74,10 @@
         <StartProgram>$(SolutionDir)../../../../RimWorldWin64.exe</StartProgram>
     </PropertyGroup>
   <ItemGroup>
-        <ReleaseFiles Include="../../../1.*/**" Exclude="../../../1.*/Source/**" />
+    <ReleaseFiles Include="../../../1.*/**" Exclude="../../../1.*/Source/**" />
     <AboutFiles Include="../../../About/**" Exclude="../../../About/*.png~" />
-    <CommonFiles Include="../../../Common/**" /> <CompatibilityFiles Include="../../../Compatibility/**" />  <ExtraFiles Include="../../../loadFolders.xml;../../../LICENSE;../../../README.md;../../../CONTINUITY.md" />  <CommonFiles Update="..\..\..\Common\Textures\RMP_GachaGun\RMP_GachaGun1.png">
-  <Link>SuperPack\Common\Textures\RMP_GachaGun\RMP_GachaGun1.png</Link>
-</CommonFiles>  <CommonFiles Update="..\..\..\Common\Textures\RMP_GachaGun\RMP_GachaGun2.png">
-  <Link>SuperPack\Common\Textures\RMP_GachaGun\RMP_GachaGun2.png</Link>
-</CommonFiles>  <CommonFiles Update="..\..\..\Common\Textures\RMP_GachaGun\RMP_GachaGun3.png">
-  <Link>SuperPack\Common\Textures\RMP_GachaGun\RMP_GachaGun3.png</Link>
-</CommonFiles>  <CommonFiles Update="..\..\..\Common\Textures\RMP_GachaGun\0001m.png">
-  <Link>SuperPack\Common\Textures\RMP_GachaGun\RMP_GachaGunmaskm.png</Link>
-</CommonFiles>  <CommonFiles Update="..\..\..\Common\Textures\RMP_GachaGun\0002m.png">
-  <Link>SuperPack\Common\Textures\RMP_GachaGun\000m.png</Link>
-</CommonFiles>  <CommonFiles Update="..\..\..\Common\Textures\RMP_GachaGun\0003m.png">
-  <Link>SuperPack\Common\Textures\RMP_GachaGun\0003m.png</Link>
-</CommonFiles>  <CommonFiles Update="..\..\..\Common\Sounds\RMP_GachaGun.ogg">
-  <Link>SuperPack\Common\Sounds\RMP_GachaGun.ogg</Link>
-</CommonFiles>  <ReleaseFiles Update="..\..\Defs\SuperPack_Hediff.xml">
-  <Link>RandomPack\1.6\Defs\SuperPack_Hediff.xml</Link>
-</ReleaseFiles>
+    <CommonFiles Include="../../../Common/**" />
+      <CompatibilityFiles Include="../../../Compatibility/**" />
+      <ExtraFiles Include="../../../loadFolders.xml;../../../LICENSE;../../../README.md;../../../CONTINUITY.md" />
     </ItemGroup>
 </Project>
