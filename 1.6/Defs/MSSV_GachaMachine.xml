@@ -30,7 +30,7 @@ A tiny warning underneath the slogans indicate that it takes some time to work a
             <ComponentIndustrial>5</ComponentIndustrial>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
-        <tradeability>Sellable</tradeability>
+        <tradeability>Buyable</tradeability>
         <fillPercent>0.5</fillPercent>
         <useHitPoints>True</useHitPoints>
         <tickerType>Normal</tickerType>

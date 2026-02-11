@@ -19,15 +19,30 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.5375,0.8)</drawSize>
     </graphicData>
+    <uiIconScale>0.9</uiIconScale>
     <statBases>
+      <WorkToBuild>120</WorkToBuild>
       <Flammability>0</Flammability>
       <Mass>3</Mass>
     </statBases>
+    <tradeability>Buyable</tradeability>
     <minifiedDef>MinifiedThing</minifiedDef>
     <building>
       <deconstructible>false</deconstructible>
       <neverBuildable>true</neverBuildable>
     </building>
-    <destroyable>false</destroyable>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <Beauty>1</Beauty>
+    <altitudeLayer>Building</altitudeLayer>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <pathCost>42</pathCost>
+    <passability>PassThroughOnly</passability>
   </ThingDef>
 </Defs>
