@@ -112,4 +112,18 @@
             <CarryingCapacity>3</CarryingCapacity>
         </statFactors>
     </GeneDef>
+    <GeneDef>
+        <defName>SuperPack_Gene_ExplodingKnees</defName>
+        <label>exploding knees</label>
+        <description>As long as this pawn still has at least one leg, they can trigger a powerful explosion centered on themselves that leaves them unharmed but blows off one of their legs each time. (thanks minu)</description>
+        <iconPath>UI/Icons/Genes/MYFUCKINGKNEEES</iconPath>
+        <biostatArc>2</biostatArc>
+        <displayCategory>Archite</displayCategory>
+        <abilities>
+            <li>SuperPack_ExplodingKnees</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>SuperPack_ExplodingKnees</AbilityDef>
+        </descriptionHyperlinks>
+    </GeneDef>
 </Defs>

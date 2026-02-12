@@ -39,11 +39,13 @@ public static class Pawn_Patch
     [HarmonyPostfix]
     public static void PostApplyDamage_Patch(Pawn __instance, DamageInfo dinfo)
     {
-        if(!SuperPack.settings.headshotSound) return;
-        if (dinfo.HitPart.def.defName.ToLower().Contains("head"))
-        {
-            SuperPackDefOf.RMP_GruntBirthday.PlayOneShot(new TargetInfo(__instance.Position, __instance.Map, false));
-            Messages.Message("Boom! Headshot!", new LookTargets(__instance), MessageTypeDefOf.NeutralEvent);
-        }
+        if (__instance == null) return;
+        if (SuperPack.settings == null || !SuperPack.settings.headshotSound) return;
+        if (dinfo.HitPart?.def?.defName == null) return;
+        if (!dinfo.HitPart.def.defName.ToLower().Contains("head")) return;
+        if (__instance.Map == null) return;
+
+        SuperPackDefOf.RMP_GruntBirthday.PlayOneShot(new TargetInfo(__instance.Position, __instance.Map, false));
+        Messages.Message("Boom! Headshot!", new LookTargets(__instance), MessageTypeDefOf.NeutralEvent);
     }
 }
