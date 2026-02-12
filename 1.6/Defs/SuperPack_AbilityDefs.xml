@@ -22,4 +22,26 @@
             <li Class="SuperPack.CompProperties_AbilityGacha" />
         </comps>
     </AbilityDef>
+    <AbilityDef>
+        <defName>SuperPack_ExplodingKnees</defName>
+        <label>exploding knees</label>
+        <description>Detonate an explosion centered on this pawn, massively damaging nearby things but costing one of their legs each time. Can only be used while at least one leg remains.</description>
+        <iconPath>UI/Icons/kabom</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+        <targetRequired>false</targetRequired>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>3.9</range>
+            <warmupTime>0</warmupTime>
+            <drawAimPie>false</drawAimPie>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="SuperPack.CompProperties_AbilityExplodingKnees" />
+        </comps>
+    </AbilityDef>
 </Defs>
