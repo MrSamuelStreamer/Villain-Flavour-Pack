@@ -79,5 +79,8 @@
     <CommonFiles Include="../../../Common/**" />
       <CompatibilityFiles Include="../../../Compatibility/**" />
       <ExtraFiles Include="../../../loadFolders.xml;../../../LICENSE;../../../README.md;../../../CONTINUITY.md" />
+      <ReleaseFiles Update="..\..\Defs\SuperPack_Random.xml">
+        <Link>RandomPack\1.6\Defs\SuperPack_Random.xml</Link>
+      </ReleaseFiles>
     </ItemGroup>
 </Project>

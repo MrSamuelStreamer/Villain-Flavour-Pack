@@ -39,6 +39,7 @@ public static class Pawn_Patch
     [HarmonyPostfix]
     public static void PostApplyDamage_Patch(Pawn __instance, DamageInfo dinfo)
     {
+        if (dinfo.Weapon != SuperPackDefOf.RMP_GachaGun) return;
         if (__instance == null) return;
         if (SuperPack.settings == null || !SuperPack.settings.headshotSound) return;
         if (dinfo.HitPart?.def?.defName == null) return;

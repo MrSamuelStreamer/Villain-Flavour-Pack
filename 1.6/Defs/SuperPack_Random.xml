@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SoundDef>
+        <defName>RMP_NumberDestroy</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>RMP_NumberDestroy</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>0.8~1.2</pitchRange>
+                <volumeRange>30~50</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <ThingDef ParentName="BuildingBase" Name="SP_Number">
+        <rotatable>false</rotatable>
+        <size>(3,3)</size>
+        <fillPercent>1</fillPercent>
+        <altitudeLayer>Building</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>0</Flammability>
+        </statBases>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <tickerType>Normal</tickerType>
+        <building>
+            <claimable>false</claimable>
+            <alwaysDeconstructible>true</alwaysDeconstructible>
+            <canLandGravshipOn>true</canLandGravshipOn>
+            <isInert>true</isInert>
+        </building>
+        <comps>
+            <li Class="SuperPack.CompProperties_DestroyAfter">
+                <ticks>600~1200</ticks>
+                <explodeOnDestroy>true</explodeOnDestroy>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SP_Number">
+        <defName>SP_Number_1</defName>
+        <name>1</name>
+        <description>1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
+        <graphicData>
+            <texPath>Buildings/RMP_1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="SP_Number">
+        <defName>SP_Number_2</defName>
+        <name>2</name>
+        <description>2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
+        <graphicData>
+            <texPath>Buildings/RMP_2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="SP_Number">
+        <defName>SP_Number_3</defName>
+        <name>3</name>
+        <description>3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
+        <graphicData>
+            <texPath>Buildings/RMP_3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="SP_Number">
+        <defName>SP_Number_4</defName>
+        <name>4</name>
+        <description>4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
+        <graphicData>
+            <texPath>Buildings/RMP_4</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="SP_Number">
+        <defName>SP_Number_5</defName>
+        <name>5</name>
+        <description>5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
+        <graphicData>
+            <texPath>Buildings/RMP_5</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="SP_Number">
+        <defName>SP_Number_6</defName>
+        <name>6</name>
+        <description>6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
+        <graphicData>
+            <texPath>Buildings/RMP_6</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+    </ThingDef>
+</Defs>

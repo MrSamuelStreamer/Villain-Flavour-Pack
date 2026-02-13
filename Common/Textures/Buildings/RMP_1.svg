@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="RMP_1.svg"
+   inkscape:export-filename="RMP_1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="2.19328"
+     inkscape:cx="48.101473"
+     inkscape:cy="54.028669"
+     inkscape:window-width="1273"
+     inkscape:window-height="1392"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient13"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#cd004a;stop-opacity:1;"
+         offset="0"
+         id="stop12" />
+      <stop
+         style="stop-color:#ff0e70;stop-opacity:1;"
+         offset="1"
+         id="stop13" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#e60054;stop-opacity:1;"
+         offset="0"
+         id="stop5" />
+      <stop
+         style="stop-color:#ff6ca7;stop-opacity:1;"
+         offset="1"
+         id="stop6" />
+    </linearGradient>
+    <rect
+       x="20.289247"
+       y="17.09768"
+       width="107.71075"
+       height="110.90232"
+       id="rect1" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4"
+       id="linearGradient6"
+       x1="26.955726"
+       y1="70.474371"
+       x2="54.798307"
+       y2="70.474371"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient13"
+       id="linearGradient12"
+       x1="16.234964"
+       y1="3.7482877"
+       x2="18.343079"
+       y2="2.3825142"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient13"
+       id="linearGradient15"
+       x1="11.302439"
+       y1="7.5308895"
+       x2="14.209069"
+       y2="3.7482877"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 54.789048,104.09762 q 0.08333,0.83333 -0.583333,1.08333 -1.916666,1.08334 -5.583331,0.16667 -3.666665,-0.91667 -6.499997,-3.41667 -1.416666,-1.16666 -2.166666,-3.583328 -0.666666,-2.333332 -0.75,-4.083331 l -0.08333,-1.833333 V 51.014309 H 26.955726 L 39.122388,35.180982 h 15.66666 z"
+       id="text1"
+       style="font-size:85.3333px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;white-space:pre;fill:url(#linearGradient6);stroke:none;stroke-width:2"
+       transform="matrix(0.37435035,0,0,0.37435035,-0.43641011,-9.4217252)"
+       aria-label="1" />
+    <rect
+       style="fill:url(#linearGradient12);stroke:none;stroke-width:0.529167;stroke-opacity:1"
+       id="rect6"
+       width="5.8613505"
+       height="1.3657736"
+       x="14.20907"
+       y="2.3825142" />
+    <path
+       style="fill:url(#linearGradient15);fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-opacity:1"
+       d="M 9.6544753,9.6754994 V 8.2935621 L 14.20907,2.3825143 V 3.7482877 L 9.6544753,9.6754994"
+       id="path6" />
+    <path
+       id="text1-2"
+       style="font-size:85.3333px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;white-space:pre;fill:none;stroke:#000000;stroke-width:0.748701;stroke-opacity:1"
+       d="M 14.208614,2.382492 9.6543702,8.293759 v 1.381828 h 4.5542438 v 15.50448 l 0.03152,0.686263 c 0.0208,0.436742 0.114225,0.946267 0.280603,1.528589 0.187175,0.60312 0.457766,1.049843 0.81132,1.341003 0.707105,0.623917 1.517848,1.050738 2.432926,1.279508 0.915078,0.228773 1.611975,0.207838 2.090312,-0.06253 0.166374,-0.06239 0.239384,-0.197688 0.218591,-0.40566 V 3.748301 h -0.0036 V 2.382492 Z" />
+  </g>
+</svg>
