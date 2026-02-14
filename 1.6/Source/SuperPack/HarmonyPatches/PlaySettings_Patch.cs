@@ -69,21 +69,26 @@ public static class PlaySettings_Patch
         {
             if (disableUntil < Find.TickManager.TicksGame)
             {
-                disableUntil = Find.TickManager.TicksGame + 600;
+                disableUntil = Find.TickManager.TicksGame + 300;
                 Map map = Find.CurrentMap;
                 ThingDef thingDef = Things.RandomElement();
                 Thing thing = ThingMaker.MakeThing(thingDef);
-
-                if (TryFindPlaceSpotInRadius(map.GetCenterOfScreenOnMap(), thingDef.defaultPlacingRot, map, thing, 100, false, out IntVec3 pos))
+                IntVec3 pos;
+                if (TryFindPlaceSpotInRadius(map.GetCenterOfScreenOnMap(), thingDef.defaultPlacingRot, map, thing, 100, false, false, out pos))
                 {
                     Skyfaller faller = SkyfallerMaker.MakeSkyfaller(ThingDefOf.ShipChunkIncoming, thing);
                     Thing spawnedFaller = GenSpawn.Spawn(faller, pos, map);
 
+                    Messages.Message("A random number appears!", new LookTargets([thing, faller, spawnedFaller]), MessageTypeDefOf.PositiveEvent);
+                }
+                else if (TryFindPlaceSpotInRadius(map.GetCenterOfScreenOnMap(), thingDef.defaultPlacingRot, map, thing, 100, false, true, out pos))
+                {
+                    GenSpawn.Spawn(thing, pos, map);
                     Messages.Message("A random number appears!", new LookTargets(thing), MessageTypeDefOf.PositiveEvent);
                 }
 
             }else{
-                Messages.Message("Enhance your calm!", MessageTypeDefOf.RejectInput);
+                Messages.Message($"Enhance your calm! Wait {(disableUntil - Find.TickManager.TicksGame).TicksToSeconds():0.0} seconds", MessageTypeDefOf.RejectInput);
             }
         }
     }
@@ -95,9 +100,9 @@ public static class PlaySettings_Patch
         Thing thing,
         int radius,
         bool allowStacking,
+        bool allowRoofed,
         out IntVec3 bestSpot,
-        int attempts = 100,
-        Predicate<IntVec3> extraValidator = null)
+        int attempts = 100)
     {
         LocalPlaceSpotQuality placeSpotQuality1 = LocalPlaceSpotQuality.Unusable;
         bestSpot = center;
@@ -108,7 +113,13 @@ public static class PlaySettings_Patch
                 continue;
             }
 
-            object val = PlaceSpotQualityAt.Value.Invoke(null, [result, rot, map, thing, center, allowStacking, extraValidator]);
+            bool ExtraValidator(IntVec3 pos)
+            {
+                if (allowRoofed) return true;
+                return !map.roofGrid.Roofed(pos);
+            }
+
+            object val = PlaceSpotQualityAt.Value.Invoke(null, [result, rot, map, thing, center, allowStacking, (Predicate<IntVec3>)ExtraValidator ]);
             string name = Enum.GetName(PlaceSpotQuality.Value, val) ?? "Unusable";
             LocalPlaceSpotQuality placeSpotQuality2 = (LocalPlaceSpotQuality)Enum.Parse(typeof(LocalPlaceSpotQuality), name);
 
