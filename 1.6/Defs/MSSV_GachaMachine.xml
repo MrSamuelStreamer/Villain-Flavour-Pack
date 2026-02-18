@@ -75,7 +75,7 @@ A tiny warning underneath the slogans indicate that it takes some time to work a
             </li>
             <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Breakdownable" />
-        </comps>        
+        </comps>
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
@@ -459,5 +459,5 @@ There is a microscopic slogan accompanied underneath this option: "weekly subscr
         </li>
       </ingredients>
     </RecipeDef>
-  
+
 </Defs>

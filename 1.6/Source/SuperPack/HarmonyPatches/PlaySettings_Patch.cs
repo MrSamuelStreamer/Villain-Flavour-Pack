@@ -49,12 +49,12 @@ public static class PlaySettings_Patch
             {
                 field =
                 [
-                    SuperPackDefOf.SP_Number_1,
-                    SuperPackDefOf.SP_Number_2,
-                    SuperPackDefOf.SP_Number_3,
-                    SuperPackDefOf.SP_Number_4,
-                    SuperPackDefOf.SP_Number_5,
-                    SuperPackDefOf.SP_Number_6
+                    SuperPackDefOf.SP_Number_One,
+                    SuperPackDefOf.SP_Number_Two,
+                    SuperPackDefOf.SP_Number_Three,
+                    SuperPackDefOf.SP_Number_Four,
+                    SuperPackDefOf.SP_Number_Five,
+                    SuperPackDefOf.SP_Number_Six
                 ];
             }
             return field;

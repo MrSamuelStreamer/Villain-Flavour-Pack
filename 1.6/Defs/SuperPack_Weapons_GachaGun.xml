@@ -34,6 +34,23 @@
         </subSounds>
     </SoundDef>
 
+    <SoundDef>
+        <defName>RMP_BananaFall</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>RMP_BananaFall</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>1</pitchRange>
+                <volumeRange>30~50</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
     <ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_Revolver">
         <defName>RMP_GachaGun</defName>
         <label>gacha gun</label>
@@ -193,5 +210,69 @@
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>SuperPack_BananaPeelProjectile</defName>
+        <label>banana peel</label>
+        <thingClass>Projectile_SpawnsThing</thingClass>
+        <uiIconPath>RMP_Banana</uiIconPath>
+        <graphicData>
+            <texPath>RMP_Banana</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <spawnsThingDef>SuperPack_BananaPeel</spawnsThingDef>
+        </projectile>
+    </ThingDef>
+
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SuperPack_BananaPeel</defName>
+        <label>banana peel</label>
+        <description>A banana peel</description>
+        <thingClass>SuperPack.Building_BananaPeel</thingClass>
+        <graphicData>
+            <texPath>RMP_Banana</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <damageData>
+                <rect>(0,0,1,0.15)</rect>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <tickerType>Normal</tickerType>
+        <stealable>false</stealable>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <uiOrder>30</uiOrder>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <Mass>2.5</Mass>
+            <MaxHitPoints>40</MaxHitPoints>
+            <WorkToBuild>3200</WorkToBuild>
+            <Flammability>1</Flammability>
+            <Beauty>-18</Beauty>
+            <Cleanliness>-5</Cleanliness>
+            <TrapMeleeDamage>100</TrapMeleeDamage>
+            <TrapSpringChance>1.0</TrapSpringChance>
+        </statBases>
+        <costList>
+            <WoodLog>1</WoodLog>
+        </costList>
+        <designationCategory>Security</designationCategory>
+        <designationHotKey>Misc6</designationHotKey>
+        <building>
+            <isTrap>true</isTrap>
+            <trapDestroyOnSpring>true</trapDestroyOnSpring>
+            <trapDamageCategory>Sharp</trapDamageCategory>
+            <expandHomeArea>false</expandHomeArea>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+        <placeWorkers>
+            <li>PlaceWorker_NeverAdjacentTrap</li>
+        </placeWorkers>
     </ThingDef>
 </Defs>

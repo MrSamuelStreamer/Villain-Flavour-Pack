@@ -24,6 +24,8 @@
       <WorkToBuild>120</WorkToBuild>
       <Flammability>0</Flammability>
       <Mass>3</Mass>
+        <Beauty>1</Beauty>
+
     </statBases>
     <tradeability>Buyable</tradeability>
     <minifiedDef>MinifiedThing</minifiedDef>
@@ -34,7 +36,6 @@
     <costList>
       <Steel>10</Steel>
     </costList>
-    <Beauty>1</Beauty>
     <altitudeLayer>Building</altitudeLayer>
     <designationCategory>Misc</designationCategory>
     <researchPrerequisites>

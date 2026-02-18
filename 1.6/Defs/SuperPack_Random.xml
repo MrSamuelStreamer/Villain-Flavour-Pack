@@ -17,7 +17,7 @@
         </subSounds>
     </SoundDef>
 
-    <ThingDef ParentName="BuildingBase" Name="SP_Number">
+    <ThingDef Abstract="True" ParentName="BuildingBase" Name="SP_Number">
         <rotatable>false</rotatable>
         <size>(3,3)</size>
         <fillPercent>1</fillPercent>
@@ -44,8 +44,8 @@
     </ThingDef>
 
     <ThingDef ParentName="SP_Number">
-        <defName>SP_Number_1</defName>
-        <name>1</name>
+        <defName>SP_Number_One</defName>
+        <label>1</label>
         <description>1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
         <graphicData>
             <texPath>Buildings/RMP_1</texPath>
@@ -59,8 +59,8 @@
     </ThingDef>
 
     <ThingDef ParentName="SP_Number">
-        <defName>SP_Number_2</defName>
-        <name>2</name>
+        <defName>SP_Number_Two</defName>
+        <label>2</label>
         <description>2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
         <graphicData>
             <texPath>Buildings/RMP_2</texPath>
@@ -74,8 +74,8 @@
     </ThingDef>
 
     <ThingDef ParentName="SP_Number">
-        <defName>SP_Number_3</defName>
-        <name>3</name>
+        <defName>SP_Number_Three</defName>
+        <label>3</label>
         <description>3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
         <graphicData>
             <texPath>Buildings/RMP_3</texPath>
@@ -89,8 +89,8 @@
     </ThingDef>
 
     <ThingDef ParentName="SP_Number">
-        <defName>SP_Number_4</defName>
-        <name>4</name>
+        <defName>SP_Number_Four</defName>
+        <label>4</label>
         <description>4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
         <graphicData>
             <texPath>Buildings/RMP_4</texPath>
@@ -104,8 +104,8 @@
     </ThingDef>
 
     <ThingDef ParentName="SP_Number">
-        <defName>SP_Number_5</defName>
-        <name>5</name>
+        <defName>SP_Number_Five</defName>
+        <label>5</label>
         <description>5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
         <graphicData>
             <texPath>Buildings/RMP_5</texPath>
@@ -119,8 +119,8 @@
     </ThingDef>
 
     <ThingDef ParentName="SP_Number">
-        <defName>SP_Number_6</defName>
-        <name>6</name>
+        <defName>SP_Number_Six</defName>
+        <label>6</label>
         <description>6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat did you expect?</description>
         <graphicData>
             <texPath>Buildings/RMP_6</texPath>

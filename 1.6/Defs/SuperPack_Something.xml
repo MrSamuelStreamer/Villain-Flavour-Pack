@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-
-    <GlobalWorldDrawLayerDef>
-        <defName>SuperPack_Something</defName>
-        <worldDrawLayer>SuperPack.GlobalDrawLayer_Something</worldDrawLayer>
-    </GlobalWorldDrawLayerDef>
-</Defs>
