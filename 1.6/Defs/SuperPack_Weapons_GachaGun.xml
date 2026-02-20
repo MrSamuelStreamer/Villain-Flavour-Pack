@@ -150,9 +150,9 @@
         <defName>SuperPack_Rats</defName>
         <label>ratshot</label>
         <thingClass>SuperPack.Projectile_SpawnsPawns</thingClass>
-        <uiIconPath>Things/Pawn/Animal/Rat/Rat</uiIconPath>
+        <uiIconPath>Things/Pawn/Animal/Rat/Rat_east</uiIconPath>
         <graphicData>
-            <texPath>Things/Pawn/Animal/Rat/Rat</texPath>
+            <texPath>Things/Pawn/Animal/Rat/Rat_east</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
