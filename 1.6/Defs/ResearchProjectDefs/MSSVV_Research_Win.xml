@@ -6,6 +6,9 @@
 		<label>Manifest Thought</label>
 		<description>Your powers have become so powerful, and so very villainous, that you can you feel your thoughts shaping reality itself. With just a bit more thinking you might be able to bring the whole world under your control, but strain too much and you might erase yourself from existence.</description>
 		<baseCost>5000</baseCost>
+		<prerequisites>
+			<li>ShipComputerCore</li>
+		</prerequisites>
 		<techLevel>Ultra</techLevel>
 		<researchViewX>12.00</researchViewX> <!-- Fix later if necessary -->
     	<researchViewY>1.20</researchViewY>
