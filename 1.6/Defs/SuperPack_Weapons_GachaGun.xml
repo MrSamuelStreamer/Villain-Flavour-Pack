@@ -51,7 +51,7 @@
         </subSounds>
     </SoundDef>
 
-    <ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_Revolver">
+    <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>RMP_GachaGun</defName>
         <label>gacha gun</label>
         <description>An ancient weapon, powered by silver. Fires random projectiles.</description>
@@ -172,9 +172,9 @@
         <defName>SuperPack_Hares</defName>
         <label>hareshot</label>
         <thingClass>SuperPack.Projectile_SpawnsPawns</thingClass>
-        <uiIconPath>Things/Pawn/Animal/Hare/Hare</uiIconPath>
+        <uiIconPath>Things/Pawn/Animal/Hare/Hare_east</uiIconPath>
         <graphicData>
-            <texPath>Things/Pawn/Animal/Hare/Hare</texPath>
+            <texPath>Things/Pawn/Animal/Hare/Hare_east</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>

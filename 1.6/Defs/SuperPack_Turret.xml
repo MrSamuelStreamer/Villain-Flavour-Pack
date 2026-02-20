@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>SP_Turret_GachaTurret</defName>
+        <label>gacha-turret</label>
+        <description>A portable ancient weapon, powered by silver. Fires random projectiles.</description>
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <drawHighlight>true</drawHighlight>
+        <drawHighlightOnlyForHostile>true</drawHighlightOnlyForHostile>
+        <graphicData>
+            <texPath>Things/Building/Security/TurretMini_Base</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.27,0.25,0.27)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+        </graphicData>
+        <uiIconPath>RMP_GachaGun/0001</uiIconPath>
+        <uiIconScale>0.90</uiIconScale>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <altitudeLayer>Building</altitudeLayer>
+        <stealable>false</stealable>
+        <rotatable>false</rotatable>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0.7</Flammability>
+            <WorkToBuild>1800</WorkToBuild>
+            <Mass>8</Mass>
+            <Beauty>-20</Beauty>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <wickTicks>240</wickTicks>
+                <explosiveRadius>6</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.1</chanceNeverExplodeFromDamage>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>80</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="SuperPack.Comps.CompProperties_EquippableReloadable">
+                <maxCharges>24</maxCharges>
+                <soundReload>Standard_Reload</soundReload>
+                <chargeNoun>coins</chargeNoun>
+                <ammoDef>Silver</ammoDef>
+                <ammoCountPerCharge>5</ammoCountPerCharge>
+                <baseReloadTicks>60</baseReloadTicks>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelLabel>coins</fuelLabel>
+                <fuelGizmoLabel>coins left</fuelGizmoLabel>
+                <outOfFuelMessage>please insert coins</outOfFuelMessage>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </fuelFilter>
+                <fuelCapacity>120</fuelCapacity>
+                <fuelMultiplier>5</fuelMultiplier>
+                <initialFuelPercent>1000</initialFuelPercent>
+                <autoRefuelPercent>0.75</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <minimumFueledThreshold>5</minimumFueledThreshold>
+                <factorByDifficulty>true</factorByDifficulty>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <fuelIconPath>Things/Item/Resource/Silver</fuelIconPath>
+            </li>
+            <li Class="CompProperties_Stunnable">
+                <affectedDamageDefs>
+                    <li>Stun</li>
+                    <li>EMP</li>
+                </affectedDamageDefs>
+            </li>
+        </comps>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <hasTooltip>true</hasTooltip>
+        <costList>
+            <Steel>600</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <designationCategory>Security</designationCategory>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <building>
+            <combatPower>75</combatPower>   <!-- same as a scavenger -->
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>RMP_GachaGunTurret</turretGunDef>
+            <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+        </placeWorkers>
+        <designationHotKey>Misc2</designationHotKey>
+        <researchPrerequisites>
+            <li>GunTurrets</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>RMP_GachaGunTurret</defName>
+        <label>gacha gun turret</label>
+        <description>An ancient weapon, powered by silver. Fires random projectiles.</description>
+        <drawerType>RealtimeOnly</drawerType>
+        <tickerType>Rare</tickerType>
+        <graphicData>
+            <texPath>RMP_GachaGun/0001</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <soundInteract>RMP_GachaGun_Fire</soundInteract>
+        <statBases>
+            <WorkToMake>4000</WorkToMake>
+            <AccuracyTouch>0.30</AccuracyTouch>
+            <AccuracyShort>0.55</AccuracyShort>
+            <AccuracyMedium>0.85</AccuracyMedium>
+            <AccuracyLong>0.70</AccuracyLong>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>SuperPack.Verb_ShootRandom</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_Revolver</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>25.9</range>
+                <soundCast>Shot_Revolver</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+</Defs>

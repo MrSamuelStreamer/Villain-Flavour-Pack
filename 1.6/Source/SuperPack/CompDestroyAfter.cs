@@ -15,23 +15,29 @@ public class CompDestroyAfter: ThingComp
         destroyAfter = Find.TickManager.TicksGame + Props.ticks.RandomInRange;
     }
 
-    public override void CompTickInterval(int delta)
+    public override void CompTick()
     {
-        base.CompTickInterval(delta);
+        base.CompTick();
         if (destroyAfter < Find.TickManager.TicksGame)
         {
-            if (Props.explodeOnDestroy)
+            try
             {
-                GenExplosion.DoExplosion(parent.Position,
-                    parent.Map,
-                    3,
-                    DamageDefOf.Psychic,
-                    parent, 1,
-                    explosionSound:SuperPackDefOf.RMP_NumberDestroy,
-                    doSoundEffects:true,
-                    postExplosionGasType:GasType.BlindSmoke);
+                if (Props.explodeOnDestroy)
+                {
+                    GenExplosion.DoExplosion(parent.Position,
+                        parent.Map,
+                        3,
+                        DamageDefOf.Psychic,
+                        parent, 1,
+                        explosionSound: SuperPackDefOf.RMP_NumberDestroy,
+                        doSoundEffects: true,
+                        postExplosionGasType: GasType.BlindSmoke);
+                }
             }
-            parent.Destroy();
+            finally
+            {
+                parent.Destroy();
+            }
         }
     }
 

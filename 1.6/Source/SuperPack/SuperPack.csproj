@@ -82,5 +82,8 @@
       <ReleaseFiles Update="..\..\Defs\SuperPack_Random.xml">
         <Link>RandomPack\1.6\Defs\SuperPack_Random.xml</Link>
       </ReleaseFiles>
+      <ReleaseFiles Update="..\..\Defs\SuperPack_Turret.xml">
+        <Link>RandomPack\1.6\Defs\SuperPack_Turret.xml</Link>
+      </ReleaseFiles>
     </ItemGroup>
 </Project>
