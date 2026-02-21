@@ -1,463 +1,252 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="BenchBase">
-        <defName>MSSV_Gacha_Workbench</defName>
-        <label>Gacha machine</label>
-        <description>An enigmatic machine of seemingly ancient design. It seems to autonomously synthesise advanced, complex objects, inexplicably only requiring silver to start the process.
+  <ThingDef ParentName="BenchBase">
+    <defName>MSSV_Gacha_Workbench</defName>
+    <label>Gacha machine</label>
+    <description>An enigmatic machine of seemingly ancient design. It seems to autonomously synthesise advanced, complex objects, inexplicably only requiring silver to start the process.\n\nSlogans drawn on the side of the mysterious machine suggest that once initiated, the machine enters a self-directed fabrication cycle, rearranging matter according to random patterns. The results are unpredictable.\n\nA tiny warning underneath the slogans indicate that it takes some time to work and there is a biometric scanner to facilitate home delivery; however if no biometric data is mmatched, it'll simply drop to the dispensary box for anyone to retrieve.</description>
+    <thingClass>MSSV_Gacha_Random.Building_GachaMachine</thingClass>
+    <graphicData>
+      <texPath>Buildings/Gachamachine/gachamachine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,3)</drawSize>
+      <drawOffset>(0, 0, 0.7)</drawOffset>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <uiIconOffset>(0,0)</uiIconOffset>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(1, 0, -1)</interactionCellOffset>
+    <rotatable>true</rotatable>
+    <costList>
+      <Plasteel>75</Plasteel>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <tradeability>Buyable</tradeability>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <tickerType>Normal</tickerType>
+        <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>60000</WorkToBuild>
+      <Mass>30</Mass>
+      <Beauty>0</Beauty>
+      <Flammability>0</Flammability>
+      <MSSV_Gacha_Duration>1</MSSV_Gacha_Duration>
+      <MSSV_Gacha_PowerStored>1</MSSV_Gacha_PowerStored>
+      <WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
+    </statBases>
+    <size>(2,1)</size>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2999</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+        <idlePowerDraw>30</idlePowerDraw>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(150,150,150,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+    <!--  weights add up to 100 (not mandatory, just felt cleaner). not sure how to approach it so left it as is
+          mess around with these <weight> figures to make stuff more/less likely.
+          <tier>s: 0=whatever, 1=good, 2=wooooooo (affects letter received, can look weird if not targeted appropriately to the letter desc) -->
+    <modExtensions>
+      <li Class="MSSV_Gacha_Random.RandomOutputExtension">
+        <nothingDescCount>6</nothingDescCount>
+        <genericDescCount>3</genericDescCount>
+        <goodDescCount>2</goodDescCount>
+        <greatDescCount>2</greatDescCount>
+        <outputs>
+          <!-- tier 0 loot -->
+          <li>
+            <thingDef>ARandom_MaterialsLootBox</thingDef>
+            <weight>5</weight>
+            <tier>0</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_MedicineLootBox</thingDef>
+            <weight>5</weight>
+            <tier>0</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_MealsBox</thingDef>
+            <weight>5</weight>
+            <tier>0</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_BooksBox</thingDef>
+            <weight>5</weight>
+            <tier>0</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_DrinksBox</thingDef>
+            <weight>5</weight>
+            <tier>0</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_TribalLootBox</thingDef>
+            <weight>5</weight>
+            <tier>0</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_ShellsLootBox</thingDef>
+            <weight>5</weight>
+            <tier>0</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_HemogenCrate</thingDef>
+            <weight>5</weight>
+            <tier>0</tier>
+          </li>
+          <!-- tier 1 loot -->
+          <li>
+            <thingDef>ARandom_WeaponsBox</thingDef>
+            <weight>10</weight>
+            <tier>1</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_ApparelLootBox</thingDef>
+            <weight>5</weight>
+            <tier>1</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_LootBox</thingDef>
+            <weight>10</weight>
+            <tier>1</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_FateManipulator</thingDef>
+            <weight>10</weight>
+            <tier>1</tier>
+          </li>
+          <!-- tier 2 loot -->
+          <li>
+            <thingDef>ARandom_ValuablesLootBox</thingDef>
+            <weight>5</weight>
+            <tier>2</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_LootBox_High</thingDef>
+            <weight>5</weight>
+            <tier>2</tier>
+          </li>
+          <li>
+            <thingDef>ARandom_LootBox_SuperHigh</thingDef>
+            <weight>5</weight>
+            <tier>2</tier>
+          </li>
+          <!-- no loot at all -->
+          <li>
+            <isNothing>true</isNothing>
+            <weight>10</weight>
+          </li>
+        </outputs>
+      </li>
+    </modExtensions>
+  </ThingDef>
 
-Slogans drawn on the side of the mysterious machine suggest that once initiated, the machine enters a self-directed fabrication cycle, rearranging matter according to random patterns. The results are unpredictable.
+  <!-- workgivers etc -->
+  <WorkGiverDef>
+      <defName>MSSV_Gacha_DoBill</defName>
+      <label>do gacha machine work</label>
+      <giverClass>WorkGiver_DoBill</giverClass>
+      <workType>Smithing</workType>
+      <priorityInType>330</priorityInType>
+      <fixedBillGiverDefs>
+          <li>MSSV_Gacha_Workbench</li>
+      </fixedBillGiverDefs>
+      <verb>work at</verb>
+      <gerund>working at</gerund>
+      <requiredCapacities>
+          <li>Manipulation</li>
+      </requiredCapacities>
+      <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
 
-A tiny warning underneath the slogans indicate that it takes some time to work and there is a biometric scanner to facilitate home delivery; however if no biometric data is mmatched, it'll simply drop to the dispensary box for anyone to retrieve.</description>
-        <thingClass>Building_WorkTableAutonomous</thingClass>
-        <graphicData>
-            <texPath>Buildings/Gachamachine/gachamachine</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(4,3)</drawSize>
-            <drawOffset>(0, 0, 0.7)</drawOffset>
-        </graphicData>
-        <uiIconScale>0.8</uiIconScale>
-        <uiIconOffset>(0,0)</uiIconOffset>
-        <castEdgeShadows>true</castEdgeShadows>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
-        <defaultPlacingRot>North</defaultPlacingRot>
-        <hasInteractionCell>true</hasInteractionCell>
-        <interactionCellOffset>(1, 0, -1)</interactionCellOffset>
-        <rotatable>true</rotatable>
-        <costList>
-            <Plasteel>75</Plasteel>
-            <Steel>50</Steel>
-            <ComponentIndustrial>5</ComponentIndustrial>
-            <ComponentSpacer>2</ComponentSpacer>
-        </costList>
-        <tradeability>Buyable</tradeability>
-        <fillPercent>0.5</fillPercent>
-        <useHitPoints>True</useHitPoints>
-        <tickerType>Normal</tickerType>
-                <statBases>
-            <MaxHitPoints>400</MaxHitPoints>
-            <WorkToBuild>60000</WorkToBuild>
-            <Mass>30</Mass>
-            <Beauty>0</Beauty>
-            <Flammability>0</Flammability>
-            <MSSV_Gacha_Duration>1</MSSV_Gacha_Duration>
-            <MSSV_Gacha_PowerStored>1</MSSV_Gacha_PowerStored>
-            <WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
-        </statBases>
-        <size>(2,1)</size>
-        <designationCategory>Production</designationCategory>
-        <uiOrder>2999</uiOrder>
-        <passability>PassThroughOnly</passability>
-        <pathCost>50</pathCost>
-        <surfaceType>Item</surfaceType>
-        <inspectorTabs>
-            <li>ITab_Bills</li>
-        </inspectorTabs>
-        <building>
-            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-            <ai_chillDestination>false</ai_chillDestination>
-            <buildingTags>
-                <li>Production</li>
-            </buildingTags>
-            <destroySound>BuildingDestroyed_Metal_Big</destroySound>
-        </building>
-        <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>200</basePowerConsumption>
-                <idlePowerDraw>30</idlePowerDraw>
-            </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>3</glowRadius>
-                <glowColor>(150,150,150,0)</glowColor>
-            </li>
-            <li Class="CompProperties_Flickable" />
-            <li Class="CompProperties_Breakdownable" />
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>Machining</li>
-        </researchPrerequisites>
-    </ThingDef>
+  <StatDef>
+      <defName>MSSV_Gacha_PowerStored</defName>
+      <label>stored power need multiplier</label>
+      <description>This value represents the multiplier of stored power needed to start forming recipes.</description>
+      <category>Building</category>
+      <defaultBaseValue>1</defaultBaseValue>
+      <minValue>0</minValue>
+      <maxValue>1</maxValue>
+      <toStringStyle>PercentZero</toStringStyle>
+      <showIfUndefined>false</showIfUndefined>
+      <displayPriorityInCategory>3000</displayPriorityInCategory>
+  </StatDef>
 
-    <!-- workgivers etc -->
-    <WorkGiverDef>
-        <defName>MSSV_Gacha_DoBill</defName>
-        <label>do gacha machine work</label>
-        <giverClass>WorkGiver_DoBill</giverClass>
-        <workType>Smithing</workType>
-        <priorityInType>330</priorityInType>
-        <fixedBillGiverDefs>
-            <li>MSSV_Gacha_Workbench</li>
-        </fixedBillGiverDefs>
-        <verb>work at</verb>
-        <gerund>working at</gerund>
-        <requiredCapacities>
-            <li>Manipulation</li>
-        </requiredCapacities>
-        <prioritizeSustains>true</prioritizeSustains>
-    </WorkGiverDef>
+  <StatDef>
+      <defName>MSSV_Gacha_Duration</defName>
+      <label>forming duration</label>
+      <description>This value represents the multiplier of forming recipes duration.</description>
+      <category>Building</category>
+      <defaultBaseValue>1</defaultBaseValue>
+      <minValue>0</minValue>
+      <maxValue>1</maxValue>
+      <toStringStyle>PercentZero</toStringStyle>
+      <showIfUndefined>false</showIfUndefined>
+      <displayPriorityInCategory>3000</displayPriorityInCategory>
+  </StatDef>
 
-    <StatDef>
-        <defName>MSSV_Gacha_PowerStored</defName>
-        <label>stored power need multiplier</label>
-        <description>This value represents the multiplier of stored power needed to start forming recipes.</description>
-        <category>Building</category>
-        <defaultBaseValue>1</defaultBaseValue>
-        <minValue>0</minValue>
-        <maxValue>1</maxValue>
-        <toStringStyle>PercentZero</toStringStyle>
-        <showIfUndefined>false</showIfUndefined>
-        <displayPriorityInCategory>3000</displayPriorityInCategory>
-    </StatDef>
-
-    <StatDef>
-        <defName>MSSV_Gacha_Duration</defName>
-        <label>forming duration</label>
-        <description>This value represents the multiplier of forming recipes duration.</description>
-        <category>Building</category>
-        <defaultBaseValue>1</defaultBaseValue>
-        <minValue>0</minValue>
-        <maxValue>1</maxValue>
-        <toStringStyle>PercentZero</toStringStyle>
-        <showIfUndefined>false</showIfUndefined>
-        <displayPriorityInCategory>3000</displayPriorityInCategory>
-    </StatDef>
-
-    <!-- Parent gacha recipe -->
-    <RecipeDef Abstract="True" Name="MSSV_Gacha_Gestator">
-      <jobString>Using gacha machine.</jobString>
-      <workAmount>1800</workAmount>
-      <formingTicks>60000</formingTicks>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <soundWorking>MechGestatorCycle_Initiating</soundWorking>
-      <recipeUsers>
-        <li>MSSV_Gacha_Workbench</li>
-      </recipeUsers>
-      <ingredients>
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>100</count>
-        </li>
-      </ingredients>
-      <researchPrerequisite>Machining</researchPrerequisite>
-      <workSkill>Crafting</workSkill>
-    </RecipeDef>
-
-    <!-- Template to add other stuff. Note defaults from parent, leave out if happy (research, silver, formingTicks).
-     Building description may require changes if anything except silver/"money"
-
-     <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_NAME</defName>
-      <label>form NAME</label>
-      <description>Form a random assortment of NAME.</description>
-      <products>
-        <DEFNAME>1</DEFNAME>
-      </products>
-      <displayPriority></displayPriority>
-    </RecipeDef> -->
-
-
-    <!-- VQEA boxes  -->
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_VQEAGene</defName>
-      <label>form gene box</label>
-      <description>Form a box filled with a random assortment of genes.</description>
-      <products>
-        <VQEA_AncientGenepackCrate>1</VQEA_AncientGenepackCrate>
-      </products>
-      <displayPriority>2</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_VQEABody</defName>
-      <label>form organ box</label>
-      <description>Form a box filled with a random assortment of body parts.</description>
-      <products>
-        <VQEA_AncientOrganBox>1</VQEA_AncientOrganBox>
-      </products>
-      <displayPriority>2</displayPriority>
-    </RecipeDef>
-
-    <!-- Alpha Random stuff -->
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_MaterialsLootBox</defName>
-      <label>form materials</label>
-      <description>Form a random assortment of materials.</description>
-      <products>
-        <ARandom_MaterialsLootBox>1</ARandom_MaterialsLootBox>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>50</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_MedicineLootBox</defName>
-      <label>form medicine</label>
-      <description>Form a random assortment of medicine.</description>
-      <products>
-        <ARandom_MedicineLootBox>1</ARandom_MedicineLootBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_TextilesLootBox</defName>
-      <label>form textiles</label>
-      <description>Form a random assortment of textiles.</description>
-      <products>
-        <ARandom_TextilesLootBox>1</ARandom_TextilesLootBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_DrugsLootBox</defName>
-      <label>form drugs</label>
-      <description>Form a random assortment of drugs.</description>
-      <products>
-        <ARandom_DrugsLootBox>1</ARandom_DrugsLootBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_ProduceBox</defName>
-      <label>form produce</label>
-      <description>Form a random assortment of produce.</description>
-      <products>
-        <ARandom_ProduceBox>1</ARandom_ProduceBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_MealsBox</defName>
-      <label>form meals</label>
-      <description>Form a random assortment of meals.</description>
-      <products>
-        <ARandom_MealsBox>1</ARandom_MealsBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_BooksBox</defName>
-      <label>form books</label>
-      <description>Form a random assortment of books.</description>
-      <products>
-        <ARandom_BooksBox>1</ARandom_BooksBox>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>75</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_DrinksBox</defName>
-      <label>form drinks</label>
-      <description>Form a random assortment of drinks.</description>
-      <products>
-        <ARandom_DrinksBox>1</ARandom_DrinksBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_WeaponsBox</defName>
-      <label>form weapons</label>
-      <description>Form a random assortment of weapons.</description>
-      <products>
-        <ARandom_WeaponsBox>1</ARandom_WeaponsBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_ApparelLootBox</defName>
-      <label>form apparel</label>
-      <description>Form a random assortment of apparel.</description>
-      <products>
-        <ARandom_ApparelLootBox>1</ARandom_ApparelLootBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_TribalLootBox</defName>
-      <label>form tribal artefacts</label>
-      <description>Form a random assortment of tribal artefacts.</description>
-      <products>
-        <ARandom_BooksBox>1</ARandom_BooksBox>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>50</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_ShellsLootBox</defName>
-      <label>form mortar shells</label>
-      <description>Form a random assortment of shells.</description>
-      <products>
-        <ARandom_ShellsLootBox>1</ARandom_ShellsLootBox>
-      </products>
-      <displayPriority>1</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_ValuablesLootBox</defName>
-      <label>form valuable mystery items</label>
-      <description>Form a random assortment of valuable mystery items.</description>
-      <products>
-        <ARandom_ValuablesLootBox>1</ARandom_ValuablesLootBox>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>250</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_HemogenCrate</defName>
-      <label>form hemogen</label>
-      <description>Form a random assortment of hemogen.</description>
-      <products>
-        <ARandom_HemogenCrate>1</ARandom_HemogenCrate>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>50</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_LootBox</defName>
-      <label>form random mystery items</label>
-      <description>Form a random assortment of mystery items.</description>
-      <products>
-        <ARandom_LootBox>1</ARandom_LootBox>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>75</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_LootBox_High</defName>
-      <label>form random epic-tier mystery items</label>
-      <description>Form a random assortment of epic-tier mystery items.</description>
-      <products>
-        <ARandom_LootBox_High>1</ARandom_LootBox_High>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>200</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
-
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_LootBox_SuperHigh</defName>
-      <label>form random legendary-tier mystery items</label>
-      <description>Form a random assortment of legendary-tier mystery items.
-There is a microscopic slogan accompanied underneath this option: "weekly subscription to legendary-tiers included @ discounted £4949.95 p/w, please opt-out during the biometric scanning process."</description>
-      <products>
-        <ARandom_LootBox_SuperHigh>1</ARandom_LootBox_SuperHigh>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>500</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
-
-    <!-- inert fate manipulator -->
-    <RecipeDef ParentName="MSSV_Gacha_Gestator">
-      <defName>MSSV_Gacha_ARandom_FateManipulator</defName>
-      <label>form inert fate manipulator</label>
-      <description>Form an inert fate manipulator</description>
-      <products>
-        <ARandom_FateManipulator>1</ARandom_FateManipulator>
-      </products>
-      <displayPriority>1</displayPriority>
-      <ingredients Inherit="False">
-        <li>
-          <filter>
-            <thingDefs>
-              <li>Silver</li>
-            </thingDefs>
-          </filter>
-          <count>200</count>
-        </li>
-      </ingredients>
-    </RecipeDef>
+  <!-- Parent gacha recipe - legacy since i changed the bills around, but might update later so retained -->
+  <RecipeDef Abstract="True" Name="MSSV_Gacha_Gestator">
+    <jobString>Using gacha machine.</jobString>
+    <workAmount>1800</workAmount>
+    <formingTicks>60000</formingTicks>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <soundWorking>MechGestatorCycle_Initiating</soundWorking>
+    <recipeUsers>
+      <li>MSSV_Gacha_Workbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <researchPrerequisite>Machining</researchPrerequisite>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  <RecipeDef ParentName="MSSV_Gacha_Gestator">
+    <defName>MSSV_Gacha_Pull</defName>
+    <label>initiate gacha cycle</label>
+    <description>Insert silver and let the machine decide your fate. Results are entirely unpredictable. There are no refunds.</description>
+  </RecipeDef>
 
 </Defs>
