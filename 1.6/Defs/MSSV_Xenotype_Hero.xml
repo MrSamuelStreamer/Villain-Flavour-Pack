@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSSV_Hero</defName>
+    <label>Hero</label>
+    <description>Heroes are the powerful, highly-trained, combat experts deployed by the Hero Association to stop any disaster, natural or otherwise. Though their powers vary wildly, all heroes have a shared physical baseline of increased strength, durability, and an inate bravery.</description>
+    <descriptionShort>Heroes are the elite combat units of the Hero Association.</descriptionShort>
+    <iconPath>Xenotypes/BS_Lilim</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li MayRequire="shirohane.gene.expand">SHGE_ValueHigh</li>
+      <li MayRequire="shirohane.gene.expand">SHGE_EagleEye</li>
+      <li MayRequire="shirohane.gene.expand">SHGE_AgileBody</li>
+      <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
+      <li>WoundHealing_Fast</li>
+      <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_Certain</li>
+      <li>MeleeDamage_Strong</li>
+      <li MayRequire="pesky.bulwark">Bulwark_IronWilled</li>
+      <li>Unstoppable</li>
+      <li>Robust</li>
+      <li>Pain_Reduced</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="onlymonkey.xenotypesmonkey">DV_IntimidatingPresence</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Toughness</li>
+    </genes>
+  </XenotypeDef>
+</Defs>
