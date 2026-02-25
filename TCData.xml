@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FactionEditData>
+	<name>Villains</name>
+	<guid>2238388406205322</guid>
+	<factionChanges>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>TribeRoughMutant</defName>
+				<modName>Faction Xenotype Randomizer</modName>
+				<def>TribeRoughMutant</def>
+			</faction>
+			<kindEdits>
+				<li>
+					<def>Tribal_Penitent</def>
+					<forceSpecificXenos>True</forceSpecificXenos>
+					<techHediffDisallowedTags IsNull="True" />
+					<techHediffTags IsNull="True" />
+					<weaponTags IsNull="True" />
+					<apparelTags IsNull="True" />
+					<apparelDisallowedTags IsNull="True" />
+					<apparelRequired IsNull="True" />
+					<techRequired IsNull="True" />
+					<specificApparel IsNull="True" />
+					<specificWeapons IsNull="True" />
+					<inventory>
+						<count>1</count>
+						<choiceChance>1</choiceChance>
+						<takeAll IsNull="True" />
+						<takeOne>
+							<li>
+								<thing>ARandom_FateManipulator_Chaotic</thing>
+								<count>1</count>
+								<choiceChance>0.251321286</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>ARandom_DrugsLootBox</thing>
+								<count>1</count>
+								<choiceChance>0.16675429</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>ARandom_ProduceBox</thing>
+								<count>1</count>
+								<choiceChance>0.230179533</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>ARandom_TribalLootBox</thing>
+								<count>1</count>
+								<choiceChance>0.452166468</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>VCE_RawBanana</thing>
+								<count>1~50</count>
+								<choiceChance>1</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+						</takeOne>
+					</inventory>
+					<isGlobal>True</isGlobal>
+					<bodyTypes IsNull="True" />
+					<customBeards IsNull="True" />
+					<customHair IsNull="True" />
+					<customHairColors IsNull="True" />
+					<forcedHediffs IsNull="True" />
+					<forcedGenes IsNull="True" />
+					<forcedXenotypeChances>
+						<keys>
+							<li>Baseliner</li>
+							<li>Gorilla</li>
+							<li>Chimp</li>
+							<li>Bonobo</li>
+							<li>Orangutan</li>
+							<li>RimworldMonkey</li>
+						</keys>
+						<values>
+							<li>0</li>
+							<li>0.204298228</li>
+							<li>0.199165881</li>
+							<li>0.198203459</li>
+							<li>0.203335807</li>
+							<li>0.200769797</li>
+						</values>
+					</forcedXenotypeChances>
+					<raidLootValueFromPointsCurve>
+						<points>
+							<li>(35.00, 15.00)</li>
+							<li>(100.00, 120.00)</li>
+							<li>(1000.00, 500.00)</li>
+							<li>(2000.00, 800.00)</li>
+							<li>(4000.00, 1000.00)</li>
+						</points>
+					</raidLootValueFromPointsCurve>
+					<raidCommonalityFromPointsCurve>
+						<points>
+							<li>(0.00, 1.00)</li>
+						</points>
+					</raidCommonalityFromPointsCurve>
+					<forcedVFEAncientsEffects IsNull="True" />
+				</li>
+			</kindEdits>
+			<xenotypeChances>
+				<keys>
+					<li>Chimp</li>
+					<li>RimworldMonkey</li>
+					<li>Bonobo</li>
+					<li>Orangutan</li>
+					<li>Gorilla</li>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>0.203859374</li>
+					<li>0.203859374</li>
+					<li>0.203859374</li>
+					<li>0.198911294</li>
+					<li>0.198911294</li>
+					<li>0</li>
+				</values>
+			</xenotypeChances>
+			<overrideFactionXenotypes>True</overrideFactionXenotypes>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>PatreonCivil</defName>
+				<modName>Mr Samuel Streamer Flavour Pack</modName>
+				<def>PatreonCivil</def>
+			</faction>
+			<kindEdits>
+				<li>
+					<def>Villager</def>
+					<forceSpecificXenos>True</forceSpecificXenos>
+					<itemQuality>Legendary</itemQuality>
+					<techHediffDisallowedTags IsNull="True" />
+					<techHediffTags IsNull="True" />
+					<minGenerationAge>16</minGenerationAge>
+					<maxGenerationAge>16</maxGenerationAge>
+					<weaponTags IsNull="True" />
+					<apparelTags IsNull="True" />
+					<apparelDisallowedTags IsNull="True" />
+					<apparelRequired IsNull="True" />
+					<techRequired IsNull="True" />
+					<specificApparel>
+						<li>
+							<thing>BananaSuit_TheSuit</thing>
+							<material>Cloth</material>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>ViltrumitGeneralsuitc</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Homelandersuitc</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Invenciblec</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Incrediblesc</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>SoldierBoy</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_SEELESuit</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Starlightsuitc</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Supermanc</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>ViltrumiteLordcc</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Omnimansuitc</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Viltrumitesuitc</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_NERVSuit_05mari</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_NERVSuit_00rei</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_NERVSuit_02asuka</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_NERVSuit_01shinji</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_MaskMoon</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>0.0596235543</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_MaskSanta</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>0.0596235543</selectionChance>
+						</li>
+						<li>
+							<thing>InvencibleMaskh</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>0.079415828</selectionChance>
+						</li>
+						<li>
+							<thing>IncrediblesMaskm</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_MaskSun</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>0.0695196912</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_MaskCleo</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>0.0695196912</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_MaskDiver</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>0.173428804</selectionChance>
+						</li>
+					</specificApparel>
+					<specificWeapons IsNull="True" />
+					<inventory>
+						<count>1</count>
+						<choiceChance>1</choiceChance>
+						<takeAll IsNull="True" />
+						<takeOne>
+							<li>
+								<thing>ARandom_LootBox</thing>
+								<count>1</count>
+								<choiceChance>0.615221918</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>ARandom_LootBox_High</thing>
+								<count>1</count>
+								<choiceChance>0.266384482</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>VCE_MealGourmet</thing>
+								<count>1</count>
+								<choiceChance>1</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>MedicineIndustrial</thing>
+								<count>1~4</count>
+								<choiceChance>1</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+						</takeOne>
+					</inventory>
+					<isGlobal>True</isGlobal>
+					<replaceDefaultInventory>True</replaceDefaultInventory>
+					<label>Superhero</label>
+					<bodyTypes IsNull="True" />
+					<customBeards IsNull="True" />
+					<customHair IsNull="True" />
+					<customHairColors IsNull="True" />
+					<forcedHediffs>
+						<li>
+							<hediffDef>StrengthEnhancer</hediffDef>
+							<parts />
+							<chance>0.0500000007</chance>
+						</li>
+						<li>
+							<hediffDef>Isekai_BlazingSpeed</hediffDef>
+							<parts />
+							<chance>0.0500000007</chance>
+						</li>
+						<li>
+							<hediffDef>HVT_WeaponArt_Melee</hediffDef>
+							<parts />
+							<chance>0.0500000007</chance>
+						</li>
+						<li>
+							<hediffDef>ABooks_ArmyManual</hediffDef>
+							<parts />
+							<chance>0.0500000007</chance>
+						</li>
+						<li>
+							<hediffDef>LTS_UltraSkillChip_Melee</hediffDef>
+							<parts />
+							<chance>0.0500000007</chance>
+						</li>
+						<li>
+							<hediffDef>LTS_SpacerSkillChip_Shooting</hediffDef>
+							<parts />
+							<chance>0.0500000007</chance>
+						</li>
+						<li>
+							<hediffDef>ABooks_MidasTome</hediffDef>
+							<parts />
+							<chance>0.0500000007</chance>
+						</li>
+					</forcedHediffs>
+					<forcedGenes>
+						<li>
+							<geneDef>SuperPack_Gene_BluntInvincibility</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_BlurRunner</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Bulwark</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Electromagnetized</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Enormous</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SuperPack_Gene_ExplodingKnees</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Genius</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_HellsphereBlast</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Herculean</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_InfernoSpew</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SuperPack_Gene_InstantDeath</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SuperPack_Gene_Invincibility</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Invisibility</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SuperPack_Gene_KryptoniteInvincibility</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Marksman</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_MatterPhasing</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_PlasteelSkin</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Prowess</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>BS_Fast_TotalHealing</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_SelfRepairingTissue</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_Woundless</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>BS_NaturalArmor_Great</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>WoundHealing_UltraFast</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SHGE_Overload</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>TitanFrame</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_MasterfulShooting</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VQEA_MasterfulMelee</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>BS_TrueForm_Angelic</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>BS_TrueForm_Demonic</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>AG_AcidicDetonation</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>AG_BansheeScream</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>ERN_ChaoticCall</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>OX_DarkFireSpew</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>AG_Zap</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>AG_FreezingBreath</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>AG_GreaterAcidicVomit</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VRE_HeartCrush</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>AG_InsanityBlast</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>AG_NoxiousBreath</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>AG_PsychicAbsorption</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>BS_StickyAcidSpray</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>BS_SnekEngulf</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VRE_ToxicCloud</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>VRE_ViscuousGoo</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SHGE_ThunderSummon</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SHGE_HeavenStrike</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SHGE_StrayMeteorite</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SHGE_RuneCureMagic</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SHGE_TornadoSummon</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SHGE_Confinement</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>SHGE_Teleportation</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+						<li>
+							<geneDef>HVT_HerculeanGene</geneDef>
+							<chance>0.0500000007</chance>
+							<forceActive>True</forceActive>
+						</li>
+					</forcedGenes>
+					<forcedXenotypeChances>
+						<keys>
+							<li>MSSV_Hero</li>
+						</keys>
+						<values>
+							<li>1</li>
+						</values>
+					</forcedXenotypeChances>
+					<raidLootValueFromPointsCurve>
+						<points>
+							<li>(35.00, 15.00)</li>
+							<li>(100.00, 120.00)</li>
+							<li>(1000.00, 500.00)</li>
+							<li>(2000.00, 800.00)</li>
+							<li>(4000.00, 1000.00)</li>
+						</points>
+					</raidLootValueFromPointsCurve>
+					<raidCommonalityFromPointsCurve>
+						<points>
+							<li>(0.00, 1.00)</li>
+						</points>
+					</raidCommonalityFromPointsCurve>
+					<unwaveringlyLoyalChance>1</unwaveringlyLoyalChance>
+					<forcedVFEAncientsEffects IsNull="True" />
+				</li>
+			</kindEdits>
+			<xenotypeChances>
+				<keys>
+					<li>Baseliner</li>
+					<li>MSSV_Hero</li>
+				</keys>
+				<values>
+					<li>0</li>
+					<li>1</li>
+				</values>
+			</xenotypeChances>
+			<overrideFactionXenotypes>True</overrideFactionXenotypes>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>Empire</defName>
+				<modName>Royalty</modName>
+				<def>Empire</def>
+			</faction>
+			<kindEdits>
+				<li>
+					<def>Villager</def>
+					<forceOnlySelected>True</forceOnlySelected>
+					<techHediffChance>0.102387697</techHediffChance>
+					<techHediffsMaxAmount>6</techHediffsMaxAmount>
+					<techHediffDisallowedTags IsNull="True" />
+					<techHediffTags IsNull="True" />
+					<weaponTags IsNull="True" />
+					<apparelTags IsNull="True" />
+					<apparelDisallowedTags IsNull="True" />
+					<apparelRequired IsNull="True" />
+					<techRequired IsNull="True" />
+					<specificApparel>
+						<li>
+							<thing>K4G_Apparel_2077PoliceHat</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>K4G_Apparel_2077PoliceVest</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>K4G_Apparel_2077PoliceUniform</thing>
+							<selectionMode>FromPool3</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>K4G_Apparel_DBHRiotHelmet</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>0.749628603</selectionChance>
+						</li>
+						<li>
+							<thing>K4G_Apparel_DBHRiotVest</thing>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>0.549974799</selectionChance>
+						</li>
+						<li>
+							<thing>K4G_Apparel_2077MaxTacHelmet</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>0.564819336</selectionChance>
+						</li>
+						<li>
+							<thing>VAE_Apparel_MilitaryUniform</thing>
+							<material>Hyperweave</material>
+							<color>RGBA(0.200, 0.250, 0.073, 1.000)</color>
+							<selectionMode>FromPool3</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>VAE_Apparel_MilitaryJacket</thing>
+							<material>Hyperweave</material>
+							<color>RGBA(0.213, 0.250, 0.086, 1.000)</color>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>K4G_Apparel_DBHOfficerCap</thing>
+							<selectionMode>FromPool1</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>K4G_Apparel_DBHOfficerUniform</thing>
+							<selectionMode>FromPool3</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_FlakVest</thing>
+							<material>Plasteel</material>
+							<color>RGBA(0.150, 0.150, 0.150, 1.000)</color>
+							<selectionMode>FromPool2</selectionMode>
+							<selectionChance>1</selectionChance>
+						</li>
+						<li>
+							<thing>Apparel_AdvancedHelmet</thing>
+							<material>Plasteel</material>
+							<style>VIES_Sophian_AdvancedHelmet</style>
+							<color>RGBA(0.150, 0.150, 0.150, 1.000)</color>
+							<selectionChance>1</selectionChance>
+						</li>
+					</specificApparel>
+					<specificWeapons IsNull="True" />
+					<inventory>
+						<choiceChance>1</choiceChance>
+						<takeAll IsNull="True" />
+						<takeOne IsNull="True" />
+					</inventory>
+					<isGlobal>True</isGlobal>
+					<bodyTypes IsNull="True" />
+					<customBeards IsNull="True" />
+					<customHair IsNull="True" />
+					<customHairColors IsNull="True" />
+					<forcedHediffs IsNull="True" />
+					<forcedGenes IsNull="True" />
+					<forcedXenotypeChances>
+						<keys />
+						<values />
+					</forcedXenotypeChances>
+					<raidLootValueFromPointsCurve>
+						<points>
+							<li>(35.00, 15.00)</li>
+							<li>(100.00, 120.00)</li>
+							<li>(1000.00, 500.00)</li>
+							<li>(2000.00, 800.00)</li>
+							<li>(4000.00, 1000.00)</li>
+						</points>
+					</raidLootValueFromPointsCurve>
+					<raidCommonalityFromPointsCurve>
+						<points>
+							<li>(0.00, 1.00)</li>
+						</points>
+					</raidCommonalityFromPointsCurve>
+					<forcedVFEAncientsEffects IsNull="True" />
+				</li>
+			</kindEdits>
+			<xenotypeChances>
+				<keys>
+					<li>Hussar</li>
+					<li>Genie</li>
+					<li>SHGE_Seraphiel</li>
+					<li>Harana</li>
+					<li>Joe_WoodElf_Xeno</li>
+					<li>Joe_Loxodon_Xeno</li>
+					<li>Joe_Dragonborn_Xeno</li>
+					<li>Joe_Tabaxi_Xeno</li>
+					<li>Baseliner</li>
+				</keys>
+				<values>
+					<li>0.150000006</li>
+					<li>0.100000001</li>
+					<li>0.150000006</li>
+					<li>0.133597195</li>
+					<li>0.133597195</li>
+					<li>0.12864913</li>
+					<li>0.148441076</li>
+					<li>0.202869818</li>
+					<li>0</li>
+				</values>
+			</xenotypeChances>
+			<overrideFactionXenotypes>True</overrideFactionXenotypes>
+		</li>
+		<li>
+			<apparelStuffFilter IsNull="True" />
+			<faction>
+				<defName>FMJ_AnimalOutlanderCivil</defName>
+				<modName>Sapient Animals Faction</modName>
+				<def>FMJ_AnimalOutlanderCivil</def>
+			</faction>
+			<kindEdits>
+				<li>
+					<def>FMJ_AnimalVillager_Monkey</def>
+					<techHediffDisallowedTags IsNull="True" />
+					<techHediffTags IsNull="True" />
+					<weaponTags IsNull="True" />
+					<apparelTags IsNull="True" />
+					<apparelDisallowedTags IsNull="True" />
+					<apparelRequired IsNull="True" />
+					<techRequired IsNull="True" />
+					<specificApparel IsNull="True" />
+					<specificWeapons IsNull="True" />
+					<inventory>
+						<count>1</count>
+						<choiceChance>1</choiceChance>
+						<takeAll IsNull="True" />
+						<takeOne>
+							<li>
+								<thing>ARandom_LootBox</thing>
+								<count>1</count>
+								<choiceChance>0.901955366</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>Meat_Human</thing>
+								<count>1~25</count>
+								<choiceChance>1</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>Meat_Cow</thing>
+								<count>1~45</count>
+								<choiceChance>1</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+							<li>
+								<thing>RB_NondescriptMeat</thing>
+								<count>1~45</count>
+								<choiceChance>1</choiceChance>
+								<takeAll IsNull="True" />
+								<takeOne IsNull="True" />
+							</li>
+						</takeOne>
+					</inventory>
+					<isGlobal>True</isGlobal>
+					<replaceDefaultInventory>True</replaceDefaultInventory>
+					<bodyTypes IsNull="True" />
+					<customBeards IsNull="True" />
+					<customHair IsNull="True" />
+					<customHairColors IsNull="True" />
+					<forcedHediffs IsNull="True" />
+					<forcedGenes IsNull="True" />
+					<forcedXenotypeChances>
+						<keys />
+						<values />
+					</forcedXenotypeChances>
+					<raidLootValueFromPointsCurve>
+						<points>
+							<li>(35.00, 15.00)</li>
+							<li>(100.00, 120.00)</li>
+							<li>(1000.00, 500.00)</li>
+							<li>(2000.00, 800.00)</li>
+							<li>(4000.00, 1000.00)</li>
+						</points>
+					</raidLootValueFromPointsCurve>
+					<raidCommonalityFromPointsCurve>
+						<points>
+							<li>(1.00, 1.00)</li>
+						</points>
+					</raidCommonalityFromPointsCurve>
+					<forcedVFEAncientsEffects IsNull="True" />
+				</li>
+			</kindEdits>
+			<xenotypeChances>
+				<keys />
+				<values />
+			</xenotypeChances>
+		</li>
+	</factionChanges>
+</FactionEditData>
