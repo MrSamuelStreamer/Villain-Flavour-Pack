@@ -19,8 +19,8 @@
     </GeneDef>
     <GeneDef>
         <defName>SuperPack_Gene_KryptoniteInvincibility</defName>
-        <label>Kryptonite invincibility</label>
-        <description>This person is almost completely invulnerable, only susceptible to attacks from certain materials or weapons.</description>
+        <label>Uranium invincibility</label>
+        <description>This person is almost completely invulnerable, only susceptible to attacks from uranium weapons.</description>
         <iconPath>UI/Icons/Genes/Gene_Kryptonite</iconPath>
         <biostatArc>1</biostatArc>
         <displayCategory>Archite</displayCategory>
