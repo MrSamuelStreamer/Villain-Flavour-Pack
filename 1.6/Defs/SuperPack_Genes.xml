@@ -37,7 +37,7 @@
     <GeneDef>
         <defName>SuperPack_Gene_BluntInvincibility</defName>
         <label>Blunt invincibility</label>
-        <description>This person is completely invulnerable to blunt damage.</description>
+        <description>This person is completely invulnerable except to blunt damage.</description>
         <iconPath>UI/Icons/Genes/Gene_blunt</iconPath>
         <biostatArc>1</biostatArc>
         <displayCategory>Archite</displayCategory>
